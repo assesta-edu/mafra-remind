@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>농림축산식품부 5급 역량 리마인드 | 2편. 문제대응력</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* { box-sizing: border-box; }
+body { font-family: "Pretendard Variable", Pretendard, sans-serif; margin: 0; padding: 0; background: #f2f4f7; }
+
+.quiz-option {
+display: block; width: 100%; padding: 14px 18px; margin-bottom: 10px;
+background: #fff; border: 2px solid #ddd; border-radius: 12px;
+font-size: 15px; font-weight: 500; color: #222; cursor: pointer; text-align: left;
+font-family: "Pretendard Variable", Pretendard, sans-serif;
+transition: border-color .2s, background .2s; line-height: 1.6;
+}
+.quiz-option:hover  { border-color: #8B1A1A; background: #FFF5F5; }
+.quiz-option.correct{ border-color: #00B074; background: #E8FBF3; color: #005c3a; font-weight: 700; }
+.quiz-option.wrong  { border-color: #FF4D4D; background: #FFF0F0; color: #aa0000; }
+.quiz-option.disabled{ cursor: default; pointer-events: none; }
+
+.quiz-feedback { display: none; margin-top: 12px; padding: 14px 16px; border-radius: 12px; font-size: 15px; line-height: 1.7; font-family: "Pretendard Variable", Pretendard, sans-serif; }
+.quiz-feedback.correct-fb { background: #E8FBF3; border-left: 4px solid #00B074; color: #004d35; }
+.quiz-feedback.wrong-fb   { background: #FFF0F0; border-left: 4px solid #FF4D4D; color: #7a0000; }
+.quiz-feedback.show { display: block; }
+
+.checklist-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; cursor: pointer; }
+.checklist-box  { width: 24px; height: 24px; min-width: 24px; border: 2px solid #8B1A1A; border-radius: 6px; display: flex; align-items: center; justify-content: center; transition: background .2s; margin-top: 1px; background: #fff; }
+.checklist-box.checked { background: #8B1A1A; border-color: #8B1A1A; }
+.check-mark { display: none; color: #fff; font-size: 14px; font-weight: 800; }
+.checklist-box.checked .check-mark { display: block; }
+.checklist-text { font-size: 15px; color: #333; line-height: 1.7; transition: color .2s; }
+.checklist-text.done { color: #aaa; text-decoration: line-through; }
+
+@media (max-width: 480px) {
+.sub-card-table td { display: block !important; width: 100% !important; padding: 0 0 10px 0 !important; }
+.compare-table td  { display: block !important; width: 100% !important; padding: 0 0 12px 0 !important; }
+}
+</style>
+</head>
+<body>
+<div style="width:100%; background:#f2f4f7;">
+<table cellpadding="0" cellspacing="0" style="width:100%; max-width:640px; margin:0 auto; padding:40px 0 60px; table-layout:fixed; letter-spacing:-0.3px;">
+
+<tr><td style="padding:0 20px 24px;">
+<div style="background:linear-gradient(135deg,#8B1A1A,#C0392B); border-radius:20px; padding:32px 28px; text-align:center;">
+<div style="font-size:12px; font-weight:700; color:#FFDADA; letter-spacing:2.5px; margin-bottom:10px;">농림축산식품부 5급 역량 리마인드 시리즈</div>
+<div style="font-size:26px; font-weight:900; color:#fff; line-height:1.35; margin-bottom:8px;">현상의 이면을 꿰뚫고,<br>최적의 해법으로 돌파하는 힘</div>
+<div style="font-size:14px; color:#FFDADA;">평가 이후에도 역량은 계속됩니다 · ⓒ ASSESTA</div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 8px; text-align:center;">
+<span style="display:inline-block; background:#fff; border:2px solid #8B1A1A; border-radius:100px; padding:6px 20px; font-size:13px; font-weight:700; color:#8B1A1A;">2편 · 문제대응력 &nbsp;/&nbsp; 총 6편 시리즈</span>
+<div style="margin-top:8px; font-size:13px; color:#888;">농림축산식품부 5급 역량평가 수료자 대상</div>
+</td></tr>
+
+<tr><td style="padding:20px 20px 0;">
+<div style="height:4px; background:linear-gradient(90deg,#8B1A1A,#C0392B,#FFDADA); border-radius:4px;"></div>
+</td></tr>
+
+<tr><td style="background:#fff; padding:0 20px;">
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+
+<tr><td style="padding:40px 0 6px; text-align:center; font-size:24px; font-weight:900; color:#8B1A1A; line-height:1.35;">
+  복잡한 얽힘 속에서<br>가장 날카로운 해법을 찾는 통찰
+</td></tr>
+<tr><td style="padding-bottom:6px; text-align:center; font-size:14px; font-weight:700; color:#C0392B;">
+  #문제대응력 &nbsp;#문제인식및원인파악 &nbsp;#대안제시 &nbsp;#5급리더
+</td></tr>
+
+<tr><td style="padding:22px 0 32px; font-size:16px; color:#333; line-height:1.9;">
+  예상치 못한 조류인플루엔자(AI) 발생부터 농산물 수급 불균형까지, 농정 현장은 매일이 해결해야 할 문제의 연속입니다. <em style="font-style: normal;">"지금 눈앞에 보이는 현상이 진짜 원인인가?"</em>라는 의구심은 문제의 본질에 다가가기 위한 5급 사무관의 필수적인 사고 과정입니다.<br><br>
+  단순히 당면한 민원을 해결하는 것을 넘어, 복잡하게 얽힌 이해관계와 정책 변수 속에서 인과관계를 명확히 짚어내십시오. 가용 자원과 법적 테두리 내에서 정책 파급효과를 고려한 최적의 대안을 선택하는 능력은 농정의 신뢰도를 결정짓는 핵심 역량입니다.<br><br>
+  리마인드 시리즈의 두 번째 시간, <strong style="color:#8B1A1A;">문제대응력</strong>을 통해 현장의 난제를 정책적 대안으로 전환하는 지혜를 점검해 보겠습니다.
+</td></tr>
+
+<tr><td style="padding-bottom:32px;">
+  <div style="background:linear-gradient(135deg,#FFF5F5,#FFE8E8); border:1.5px solid #FFDADA; border-radius:16px; padding:24px 22px;">
+    <div style="font-size:17px; font-weight:800; color:#8B1A1A; margin-bottom:14px;">📌 오늘의 리마인드 포인트</div>
+    <ul style="margin:0; padding-left:18px;">
+      <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">문제대응력 역량의 핵심 정의와 의미를 이해합니다.</li>
+      <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">'문제인식 및 원인파악'과 '대안제시'의 핵심 행동을 현업 예시를 통해 확인합니다.</li>
+      <li style="font-size:15px; color:#333; line-height:1.8;">축산물 유통 구조 개선 사례를 통해 실무적 문제해결 프로세스를 복습합니다.</li>
+    </ul>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:16px;">
+  <span style="display:inline-block; background:#8B1A1A; color:#FFDADA; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ①</span>
+  <div style="font-size:21px; font-weight:900; color:#8B1A1A; line-height:1.4;">문제대응력 역량이란 무엇인가?</div>
+</td></tr>
+<tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+  문제대응력은 단순히 임기응변으로 상황을 모면하는 능력이 아닙니다. 이에 대한 공식 정의는 다음과 같습니다.
+</td></tr>
+
+<tr><td style="padding-bottom:22px;">
+  <div style="background:#8B1A1A; border-radius:16px; padding:24px 26px;">
+    <div style="font-size:11px; font-weight:700; color:#FFDADA; margin-bottom:10px; letter-spacing:2px;">DEFINITION · 문제대응력</div>
+    <div style="font-size:16px; color:#fff; line-height:1.9;">
+      "발생한 <strong style="color:#FFDADA;">문제의 핵심을 파악</strong>하여 문제를 해결하기 위한 <strong style="color:#FFDADA;">최적의 대안을 도출</strong>하는 역량"
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+  핵심 키워드는 <strong>'핵심 파악'</strong>과 <strong>'최적 대안'</strong>입니다. 문제대응력은 <strong>핵심 원인을 규명하고 → 실현 가능한 해결 방안을 모색하여 → 정책 목표에 가장 부합하는 대안을 결정하는 과정</strong>입니다.
+</td></tr>
+
+<tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#8B1A1A;">2가지 하위요소와 행동지표</td></tr>
+<tr><td style="padding-bottom:10px;">
+  <div style="background:#FFF5F5; border:1.5px solid #FFDADA; border-radius:14px; padding:20px 18px; margin-bottom:10px;">
+    <div style="font-size:11px; font-weight:700; color:#8B1A1A; margin-bottom:6px; letter-spacing:1px;">하위요소 ①</div>
+    <div style="font-size:16px; font-weight:900; color:#8B1A1A; margin-bottom:8px;">문제인식 및 원인파악</div>
+    <div style="font-size:14px; color:#555; line-height:1.75;">당면한 문제 상황을 인식하고 인과관계를 파악하여 핵심 원인을 규명함</div>
+    <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #FFDADA; font-size:13px; color:#C0392B; font-weight:600;">
+      💡 현업 예시: 특정 농산물의 가격 폭등 시, 단순히 계절 요인으로 치부하지 않고 유통 단계의 매집 행위나 산지 폐기 여부 등 구조적 인과관계를 파헤치는 태도
+   </div>
+  </div>
+  <div style="background:#F4E7EE; border:1.5px solid #D9B8C7; border-radius:14px; padding:20px 18px;">
+    <div style="font-size:11px; font-weight:700; color:#A00040; margin-bottom:6px; letter-spacing:1px;">하위요소 ②</div>
+    <div style="font-size:16px; font-weight:900; color:#884A61; margin-bottom:8px;">대안제시</div>
+    <div style="font-size:14px; color:#555; line-height:1.75;">발생한 문제를 해결할 수 있는 최적의 해결방안을 모색함</div>
+    <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #D9B8C7; font-size:13px; color:#941B44; font-weight:600;">
+      💡 현업 예시: 인력 부족 농가 지원을 위해 기존 예산 증액뿐만 아니라, 인근 지자체 간 인력 풀 공유 시스템 구축이나 외국인 계절근로자 쿼터 조정 등 실효성 있는 대안을 제시하는 행동
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:32px;">
+  <div style="background:#FEF9E7; border:1.5px solid #F4D03F; border-radius:14px; padding:16px 18px;">
+    <div style="font-size:13px; font-weight:800; color:#d97706; margin-bottom:10px;">📊 평가기법 매트릭스에서 문제대응력 위치</div>
+    <table cellpadding="0" cellspacing="0" style="width:100%; text-align:center;">
+      <tr>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; text-align:left; width:40%;">평가기법</td>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">서류함</td>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">발표</td>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">역할수행</td>
+      </tr>
+      <tr>
+        <td style="font-size:14px; font-weight:700; color:#E5A500; text-align:left;">문제대응력</td>
+        <td style="font-size:18px; color:#E5A500;">●</td>
+        <td style="font-size:18px; color:#E5A500;">●</td>
+        <td style="font-size:18px; color:#ddd;">—</td>
+      </tr>
+    </table>
+    <div style="margin-top:8px; font-size:13px; color:#777; line-height:1.7;">문제대응력은 주로 <strong>서류함 및 발표 기법</strong>을 통해 당면한 문제의 인과관계를 파악하여 핵심 원인을 규명하고, 이를 해결하기 위한 최적의 대안을 도출하는 능력을 검증합니다.</div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:16px;">
+  <span style="display:inline-block; background:#C0392B; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ②</span>
+  <div style="font-size:21px; font-weight:900; color:#8B1A1A; line-height:1.4;">현업에서 문제대응력은<br>어떻게 나타날까?</div>
+</td></tr>
+<tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+  아래 상황을 읽어보세요. 여러분의 현업 장면과 얼마나 겹치나요?
+</td></tr>
+
+<tr><td style="padding-bottom:22px;">
+  <div style="border:2px solid #e0e0e0; border-radius:16px; overflow:hidden;">
+    <div style="background:#f5f5f5; padding:11px 20px; font-size:12px; font-weight:700; color:#666; letter-spacing:1.5px;">📋 현업 시나리오</div>
+    <div style="padding:20px; font-size:15px; color:#333; line-height:1.9;">
+      <strong style="color:#8B1A1A;">B 사무관</strong>은 최근 축산물 가격 하락으로 인한 농가 경영난 문제를 해결하라는 지시를 받았다. 소비는 위축되고 공급은 과잉인 상황에서 산지 가격은 급락했으나, 정작 소비자 가격은 큰 변동이 없어 소비자 불만이 고조되고 있다. 유통업계는 높은 물류비와 인건비를 이유로 들고 있으며, 농가 단체는 신속한 수급 조절을 요구하고 있다. <strong style="color:#8B1A1A;">B 사무관</strong>은 임기방편적인 수매 지원을 넘어, 왜곡된 유통 구조를 바로잡을 수 있는 실질적인 대안을 찾아야 한다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:30px;">
+  <div style="border: 1px solid #e0e0e0; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    <div style="background: linear-gradient(135deg, #8B1A1A 0%, #C0392B 100%); padding: 16px 24px;">
+      <div style="display: flex; align-items: center;">
+        <span style="background: rgba(255,255,255,0.2); border-radius: 4px; padding: 4px 8px; font-size: 11px; color: #fff; font-weight: 700; letter-spacing: 1px; margin-right: 12px;">CASE STUDY</span>
+        <span style="font-size: 16px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">주제: 축산물 유통 구조 및 수급 안정화</span>
+      </div>
+    </div>
+
+    <div style="padding: 28px 24px; background: #ffffff;">
+      <div style="margin-bottom: 30px;">
+        <div style="display: inline-block; border-bottom: 2px solid #8B1A1A; margin-bottom: 16px; padding-bottom: 4px;">
+          <span style="font-size: 15px; font-weight: 800; color: #8B1A1A;">[원인 분석 및 인과관계 파악]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="background: #fdfdfd; border: 1px solid #f0f0f0; border-left: 4px solid #8B1A1A; border-radius: 8px; padding: 14px 18px;">
+            <div style="font-size: 14px; line-height: 1.7; color: #333;">
+              <strong style="color: #8B1A1A; font-weight: 800; margin-right: 8px;">1. 유통 마진 구조 분석:</strong>
+              산지 가격 대비 소매 가격 비대칭성의 원인이 복잡한 다단계 유통망(평균 5~6단계)에 있음을 확인
+            </div>
+          </div>
+          <div style="background: #fdfdfd; border: 1px solid #f0f0f0; border-left: 4px solid #8B1A1A; border-radius: 8px; padding: 14px 18px;">
+            <div style="font-size: 14px; line-height: 1.7; color: #333;">
+              <strong style="color: #8B1A1A; font-weight: 800; margin-right: 8px;">2. 수급 조절 기제 점검:</strong>
+              민간 차원의 자율적 수급 조절 시스템이 미비하여 공급 과잉 신호가 생산 현장에 늦게 전달되는 병목 현상 포착
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin: -10px 0 20px 0;">
+        <span style="color: #e0e0e0; font-size: 20px;">▼</span>
+      </div>
+
+      <div style="background: #FFF5F5; border: 1px dashed #C0392B; border-radius: 12px; padding: 20px;">
+        <div style="margin-bottom: 12px;">
+          <span style="font-size: 15px; font-weight: 800; color: #8B1A1A;">[최적 대안 도출 결과]</span>
+        </div>
+        <div style="font-size: 14px; color: #444; line-height: 1.8;">
+          <div style="margin-bottom: 10px; padding-left: 12px; border-left: 3px solid #C0392B;">
+            <strong>대안 A: 온라인 도매시장 활성화 및 법령 정비</strong><br>
+            단계별 오프라인 유통 과정을 디지털로 전환하고, 관련 수수료 체계를 투명화하는 제도적 기반 마련
+          </div>
+          <div style="padding-left: 12px; border-left: 3px solid #8B1A1A;">
+            <strong>대안 B: 생산자 단체 중심의 직접 유통 채널 다변화</strong><br>
+            로컬푸드 및 직거래 확대를 위한 지자체 협업 모델을 구축하여 산지-소비지 가격 연동성 확보
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#8B1A1A;">역량 수준에 따른 행동 차이</td></tr>
+<tr><td style="padding-bottom:28px;">
+  <table cellpadding="0" cellspacing="0" class="compare-table" style="width:100%;">
+    <tr>
+      <td style="width:50%; vertical-align:top; padding-right:8px;">
+        <div style="background:#E8FBF3; border:1.5px solid #35BD76; border-radius:14px; padding:18px 16px;">
+          <div style="font-size:13px; font-weight:800; color:#004D35; margin-bottom:10px;">✅ 역량 발휘 행동</div>
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">표면적 현상에 매몰되지 않고 데이터 간의 인과관계를 통해 핵심 원인을 규명함</li>
+            <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">기존 방식에 얽매이지 않고 실현 가능하면서도 창의적인 해결책을 다각도로 검토함</li>
+            <li style="font-size:14px; color:#333; line-height:1.8;">문제 해결 시 발생할 수 있는 부작용이나 기회비용을 고려하여 최적안을 선택함</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; padding-left:8px;">
+        <div style="background:#FFF5F5; border:1.5px solid #ffaaaa; border-radius:14px; padding:18px 16px;">
+          <div style="font-size:13px; font-weight:800; color:#cc3333; margin-bottom:10px;">⚠️ 역량 미흡 행동</div>
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">발생한 문제의 원인을 외부 환경이나 타 부서 탓으로 돌리며 핵심 파악을 회피함</li>
+            <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">과거의 관행적인 해결책(단순 예산 투입 등)을 반복하여 근본적 해결에 실패함</li>
+            <li style="font-size:14px; color:#555; line-height:1.8;">논리적 근거 없이 직관이나 주관적 판단에 의존하여 성급하게 대안을 결정함</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;">
+  <div style="background:#FFFBF0; border-left:4px solid #F5A623; border-radius:0 14px 14px 0; padding:18px 20px;">
+    <div style="font-size:13px; font-weight:800; color:#995500; margin-bottom:8px;">💡 현업 적용 인사이트</div>
+    <div style="font-size:15px; color:#333; line-height:1.85;">
+      현장의 문제는 여러 요인이 복합적으로 작용합니다. 핵심 원인을 규명하기 위해 '왜?'라는 질문을 5번 반복(5-Whys)하며 현상의 가지가 아닌 '문제의 뿌리'를 건드리는 대안을 찾아야 합니다. 근본 원인을 제거하지 않은 대안은 더 큰 문제를 불러올 수 있습니다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:24px; text-align:center;">
+  <span style="display:inline-block; background:linear-gradient(135deg,#8B1A1A,#C0392B); color:#fff; font-size:12px; font-weight:700; padding:5px 16px; border-radius:100px; margin-bottom:14px; letter-spacing:1.5px;">🧩 오늘의 퀴즈</span>
+  <div style="font-size:21px; font-weight:900; color:#8B1A1A; line-height:1.4; margin-bottom:8px;">문제대응력 역량,<br>얼마나 이해하셨나요?</div>
+</td></tr>
+
+<tr><td style="padding-bottom:24px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div style="font-size:12px; font-weight:700; color:#8B1A1A; margin-bottom:10px;">Q 1 / 3 &nbsp;·&nbsp; 개념 이해</div>
+    <div style="font-size:16px; font-weight:800; color:#8B1A1A; line-height:1.6; margin-bottom:18px;">
+      다음 중 '문제대응력'의 하위요소 2가지로 올바른 것은?
+    </div>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">① 환경 분석, 전략방향 수립</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',true)">② 문제인식 및 원인파악, 대안제시</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">③ 이해관계자요구사항파악, 설득 및 조정</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">④ 실행계획 수립, 점검 및 관리</button>
+    <div id="q1-correct" class="quiz-feedback correct-fb">
+      ✅ <strong>정답입니다!</strong> 문제대응력은 '문제인식 및 원인파악'과 '대안제시'라는 두 가지 핵심 하위요소로 구성되어 있습니다. ①은 기획력, ③은 협의조정, ④는 실행관리 역량의 하위요소입니다.
+    </div>
+    <div id="q1-wrong" class="quiz-feedback wrong-fb">
+      ❌ <strong>아쉽습니다!</strong> 정답은 ②입니다. 문제대응력의 하위요소는 당면한 문제 상황을 인식하고 인과관계를 파악하여 핵심 원인을 규명하는 '문제인식 및 원인파악'과 발생한 문제를 해결할 수 있는 최적의 해결방안을 모색하는 '대안제시'입니다. ①은 기획력, ③은 협의조정, ④는 실행관리 역량의 하위요소입니다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:24px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div style="font-size:12px; font-weight:700; color:#8B1A1A; margin-bottom:10px;">Q 2 / 3 &nbsp;·&nbsp; 현업 적용</div>
+    <div style="font-size:16px; font-weight:800; color:#8B1A1A; line-height:1.6; margin-bottom:8px;">
+      다음 중 문제대응력 역량이 가장 우수한 사무관의 행동은?
+    </div>
+    <div style="font-size:14px; color:#555; line-height:1.75; margin-bottom:18px; padding:12px 16px; background:#fff; border-radius:10px; border:1px solid #e0e0e0;">
+      <strong>상황:</strong> '청년 창업농 지원 사업'의 중도 포기율이 급증하여 보완 대책을 마련해야 한다.
+    </div>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">① 포기한 인원만큼 신규 모집 인원을 늘려 목표 수치를 달성한다.</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">② 사업 홍보 부족이 원인이라 판단하고 대대적인 광고 예산을 편성한다.</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',true)">③ 탈농 원인이 '소득 불안'인지 '지역 융합 실패'인지 심층 분석하여, 영농 정착 지원금 지급 방식과 멘토링 시스템 개선안을 제안한다.</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">④ 포기한 청년들을 대상으로 전원 면담을 실시하여 개인의 의지 부족을 질책한다.</button>
+    <div id="q2-correct" class="quiz-feedback correct-fb">
+      ✅ <strong>정답입니다!</strong> 포기라는 현상 뒤의 '진짜 원인'을 분석하고, 그에 기반한 제도적 대안을 제시한 ③번 사무관이 문제대응력이 가장 훌륭합니다.
+    </div>
+    <div id="q2-wrong" class="quiz-feedback wrong-fb">
+      ❌ <strong>아쉽습니다!</strong> 정답은 ③입니다. ①은 수치 메우기, ②는 잘못된 원인 진단, ④는 개인에게 책임을 전가하는 행위로 문제대응력 관점에서는 미흡한 행동입니다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:32px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div style="font-size:12px; font-weight:700; color:#8B1A1A; margin-bottom:10px;">Q 3 / 3 &nbsp;·&nbsp; O / X 판단</div>
+    <div style="font-size:16px; font-weight:800; color:#8B1A1A; line-height:1.6; margin-bottom:18px;">
+      문제대응력의 하위요소인 '문제인식 및 원인파악'은 문제의 현상을 나열하는 것보다, 다양한 정보 간의 인과관계를 통해 '핵심 원인'을 찾아내는 것이 더 중요하다. &nbsp;<span style="color:#C0392B;">[O / X]</span>
+    </div>
+    <button class="quiz-option" onclick="checkQuiz(this,'q3',true)" style="text-align:center; font-size:18px; font-weight:900;">⭕ &nbsp;O</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q3',false)" style="text-align:center; font-size:18px; font-weight:900;">❌ &nbsp;X</button>
+    <div id="q3-correct" class="quiz-feedback correct-fb">
+      ✅ <strong>정답입니다!</strong>  '문제인식 및 원인파악'의 핵심은 현상을 단순히 나열하는 것이 아니라, 인과관계를 통해 핵심 원인을 규명하는 것을 의미합니다.
+    </div>
+    <div id="q3-wrong" class="quiz-feedback wrong-fb">
+      ❌ <strong>아쉽습니다!</strong> 정답은 O입니다. ‘문제인식 및 원인파악’은 문제 상황을 인식하고 인과관계를 통해 핵심 원인을 규명하는 것입니다. 문제대응력은 이를 바탕으로 최적의 해결방안을 모색하는 역량입니다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:16px;">
+  <span style="display:inline-block; background:#d97706; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">셀프 체크</span>
+  <div style="font-size:21px; font-weight:900; color:#8B1A1A; line-height:1.4;">나의 문제대응력<br>현업 실천 체크리스트</div>
+</td></tr>
+<tr><td style="padding-bottom:6px; font-size:14px; color:#888;">최근 해결했던 민원이나 현안 업무를 떠올리며 체크해 보세요.</td></tr>
+<tr><td style="padding-bottom:32px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">문제 발생 시 즉각적인 대응에 앞서, 데이터와 통계를 통해 문제의 규모와 심각성을 정확히 파악했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">현상의 이면에 숨겨진 다양한 이해관계자들의 입장과 구조적 인과관계를 규명했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">과거의 해결 방식을 답습하지 않고, 현시점에 적합한 새로운 대안을 2가지 이상 검토했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">제시한 대안이 가져올 정책적 효과와 잠재적 부작용을 사전에 분석하여 최적안을 선택했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">단기적 처방에 그치지 않고, 동일한 문제가 재발하지 않도록 제도적 보완책까지 마련했다.</div>
+    </div>
+    <div id="checklist-result" style="display:none; margin-top:18px; padding:14px 16px; border-radius:12px; font-size:14px; line-height:1.8;"></div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:30px;">
+  <div style="height:4px; background:linear-gradient(90deg,#FFDADA,#C0392B,#8B1A1A); border-radius:4px;"></div>
+</td></tr>
+
+<tr><td style="padding-bottom:0;">
+  <div style="background:linear-gradient(135deg,#2D0D0D,#8B1A1A); border-radius:20px; padding:34px 28px; text-align:center;">
+    <div style="font-size:12px; font-weight:700; color:#FFDADA; letter-spacing:2.5px; margin-bottom:16px;">오늘의 성장 한 줄</div>
+    <div style="font-size:18px; font-weight:600; color:#fff; line-height:1.8; margin-bottom:14px;">
+      "나에게 1시간이 주어진다면, 나는 55분 동안 문제를 정의하고<br>나머지 5분 동안 해결책을 찾을 것이다."
+    </div>
+    <div style="font-size:14px; color:#FFDADA;">— 알베르트 아인슈타인 (Albert Einstein)</div>
+  </div>
+</td></tr>
+
+<tr><td style="padding:32px 20px;"><div style="height:1px; background:#ddd;"></div></td></tr>
+
+<tr><td style="padding:0 20px 24px;">
+<div style="background:#fff; border:1.5px solid #e0e0e0; border-radius:16px; padding:22px 24px; text-align:center;">
+<div style="font-size:12px; font-weight:700; color:#aaa; margin-bottom:8px; letter-spacing:2px;">NEXT EPISODE</div>
+<div style="font-size:18px; font-weight:900; color:#8B1A1A; margin-bottom:5px;">3편 · 실행관리</div>
+<div style="font-size:14px; color:#777;">완결된 정책을 만드는 힘, 실행의 디테일이 성과를 결정합니다</div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 32px;">
+<div style="background:#fff; border:1.5px solid #e8e8e8; border-radius:16px; padding:28px 24px; text-align:center;">
+<div style="font-size:18px; font-weight:800; color:#222; margin-bottom:6px;">오늘의 리마인드는 어떠셨나요?</div>
+<div style="font-size:14px; color:#888; margin-bottom:20px;">여러분의 피드백이 콘텐츠를 더 좋게 만듭니다 🚩</div>
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+<tr>
+<td style="padding-right:8px;"><span onclick="giveFeedback('good')" style="display:block; height:52px; line-height:52px; background:#FFF5F5; border:2px solid #8B1A1A; border-radius:12px; font-size:15px; font-weight:700; color:#8B1A1A; cursor:pointer; text-align:center;">도움이 됐어요 😊</span></td>
+<td style="width:12px;"></td>
+<td style="padding-left:8px;"><span onclick="giveFeedback('bad')" style="display:block; height:52px; line-height:52px; background:#fafafa; border:2px solid #ccc; border-radius:12px; font-size:15px; font-weight:700; color:#888; cursor:pointer; text-align:center;">아쉬웠어요 🤔</span></td>
+</tr>
+</table>
+<div id="feedback-msg" style="display:none; margin-top:14px; font-size:14px; font-weight:600;"></div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 50px; text-align:center;">
+<div style="border-top:1px solid #e8e8e8; padding-top:24px;">
+<div style="font-size:20px; font-weight:900; color:#8B1A1A; margin-bottom:6px;">ASSESTA</div>
+<div style="font-size:13px; color:#aaa; line-height:1.6;">본 메일은 농림축산식품부 5급 역량 교육의 일환으로 발송되었습니다.<br>
+무단 전재 및 재배포를 금합니다. Copyright 2026. ASSESTA.</div>
+</div>
+</td></tr>
+
+</table>
+</div>
+
+<script>
+function checkQuiz(btn, qId, isCorrect) {
+var parent = btn.parentElement;
+var options = parent.querySelectorAll('.quiz-option');
+options.forEach(function(opt) { opt.classList.add('disabled'); });
+
+if (isCorrect) {
+btn.classList.add('correct');
+document.getElementById(qId + '-correct').classList.add('show');
+} else {
+btn.classList.add('wrong');
+document.getElementById(qId + '-wrong').classList.add('show');
+}
+}
+
+var checkCount = 0;
+function toggleCheck(item) {
+var box = item.querySelector('.checklist-box');
+var text = item.querySelector('.checklist-text');
+var result = document.getElementById('checklist-result');
+var total = document.querySelectorAll('.checklist-item').length;
+
+if (box.classList.contains('checked')) {
+box.classList.remove('checked');
+text.classList.remove('done');
+checkCount = Math.max(0, checkCount - 1);
+} else {
+box.classList.add('checked');
+text.classList.add('done');
+checkCount++;
+}
+
+if (checkCount === 0) { result.style.display = 'none'; return; }
+result.style.display = 'block';
+if (checkCount === total) {
+result.style.background='#E8FBF3'; result.style.color='#004d35';
+result.innerHTML='🌟 <strong>5개 모두 체크!</strong> 문제대응력을 현업에서 충실히 실천하고 계시네요. 어떤 난관도 돌파할 준비가 된 리더입니다.';
+} else if (checkCount >= 3) {
+result.style.background='#FFF5F5'; result.style.color='#8B1A1A';
+result.innerHTML='👍 <strong>' + checkCount + '개 체크!</strong> 잘 실천하고 계십니다. 체크하지 못한 항목을 다음 현안 대응이나 민원 해결 시 의식적으로 적용해 보세요.';
+} else {
+result.style.background='#FFFBF0'; result.style.color='#7a4f00';
+result.innerHTML='📝 <strong>' + checkCount + '개 체크.</strong> 체크하지 못한 항목이 주요 개발 포인트입니다. 현안 발생 시 과거의 방식을 잠시 멈추고 객관적인 데이터로 현 상황을 정밀하게 진단하는 것부터 시작해 보세요!';
+}
+}
+
+function giveFeedback(type) {
+var msg = document.getElementById('feedback-msg');
+msg.style.display = 'block';
+if (type === 'good') {
+msg.style.color = '#8B1A1A';
+msg.innerHTML = '감사합니다! 긍정적인 피드백이 큰 힘이 됩니다. 더 유익한 시리즈로 보답하겠습니다.';
+} else {
+msg.style.color = '#888';
+msg.innerHTML = '소중한 의견 감사합니다. 더 나은 콘텐츠를 위해 적극적으로 보완하겠습니다.';
+}
+}
+</script>
+</body>
+</html>

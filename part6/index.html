@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>농림축산식품부 5급 역량 리마인드 | 6편. 의사소통</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        * { box-sizing: border-box; }
+        body { font-family: "Pretendard Variable", Pretendard, sans-serif; margin: 0; padding: 0; background: #f2f4f7; }
+        .quiz-option { display: block; width: 100%; padding: 14px 18px; margin-bottom: 10px; background: #fff; border: 2px solid #ddd; border-radius: 12px; font-size: 15px; font-weight: 500; color: #222; cursor: pointer; text-align: left; font-family: "Pretendard Variable", Pretendard, sans-serif; transition: border-color .2s, background .2s; line-height: 1.6; }
+        .quiz-option:hover { border-color: #0A4A6B; background: #F0F4F7; }
+        .quiz-option.correct { border-color: #00B074; background: #E8FBF3; color: #005c3a; font-weight: 700; }
+        .quiz-option.wrong { border-color: #FF4D4D; background: #FFF0F0; color: #aa0000; }
+        .quiz-option.disabled { cursor: default; pointer-events: none; }
+        .quiz-feedback { display: none; margin-top: 12px; padding: 14px 16px; border-radius: 12px; font-size: 15px; line-height: 1.7; font-family: "Pretendard Variable", Pretendard, sans-serif; }
+        .quiz-feedback.correct-fb { background: #E8FBF3; border-left: 4px solid #00B074; color: #004d35; }
+        .quiz-feedback.wrong-fb { background: #FFF0F0; border-left: 4px solid #FF4D4D; color: #7a0000; }
+        .quiz-feedback.show { display: block; }
+        .checklist-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; cursor: pointer; }
+        .checklist-box { width: 24px; height: 24px; min-width: 24px; border: 2px solid #0A4A6B; border-radius: 6px; display: flex; align-items: center; justify-content: center; transition: background .2s; margin-top: 1px; background: #fff; }
+        .checklist-box.checked { background: #0A4A6B; border-color: #0A4A6B; }
+        .check-mark { display: none; color: #fff; font-size: 14px; font-weight: 800; }
+        .checklist-box.checked .check-mark { display: block; }
+        .checklist-text { font-size: 15px; color: #333; line-height: 1.7; transition: color .2s; }
+        .checklist-text.done { color: #aaa; text-decoration: line-through; }
+        
+        .chat-container { padding: 20px; background: #f0f2f5; display: flex; flex-direction: column; gap: 15px; border-radius: 12px; }
+        .message { max-width: 85%; padding: 12px 16px; border-radius: 15px; font-size: 14px; line-height: 1.5; position: relative; }
+        .message.left { align-self: flex-start; background: white; border: 1px solid #ddd; border-bottom-left-radius: 2px; }
+        .message.right { align-self: flex-end; background: #0A4A6B; color: white; border-bottom-right-radius: 2px; }
+        .message .name { display: block; font-size: 11px; font-weight: bold; margin-bottom: 4px; color: #666; }
+        .message.right .name { color: #B3E5FC; text-align: right; }
+
+        @media (max-width: 480px) {
+            .compare-table td { display: block !important; width: 100% !important; padding: 0 0 12px 0 !important; }
+        }
+    </style>
+</head>
+<body>
+<div style="width:100%; background:#f2f4f7;">
+    <table cellpadding="0" cellspacing="0" style="width:100%; max-width:640px; margin:0 auto; padding:40px 0 60px; table-layout:fixed; letter-spacing:-0.3px;">
+        <tr><td style="padding:0 20px 24px;">
+            <div style="background:linear-gradient(135deg,#0A4A6B,#0288D1); border-radius:20px; padding:32px 28px; text-align:center;">
+                <div style="font-size:12px; font-weight:700; color:#B3E5FC; letter-spacing:2.5px; margin-bottom:10px;">농림축산식품부 5급 역량 리마인드 시리즈</div>
+                <div style="font-size:26px; font-weight:900; color:#fff; line-height:1.35; margin-bottom:8px;">마음을 열고 핵심을 전하는<br>공감과 논리의 조화, 의사소통</div>
+                <div style="font-size:14px; color:#B3E5FC;">평가 이후에도 역량은 계속됩니다 · ⓒ ASSESTA</div>
+            </div>
+        </td></tr>
+
+        <tr><td style="padding:0 20px 8px; text-align:center;">
+            <span style="display:inline-block; background:#fff; border:2px solid #0A4A6B; border-radius:100px; padding:6px 20px; font-size:13px; font-weight:700; color:#0A4A6B;">6편 · 의사소통 &nbsp;/&nbsp; 총 6편 시리즈</span>
+            <div style="margin-top:8px; font-size:13px; color:#888;">농림축산식품부 5급 역량평가 수료자 대상</div>
+        </td></tr>
+
+        <tr><td style="padding:20px 20px 0;">
+            <div style="height:4px; background:linear-gradient(90deg,#0A4A6B,#0288D1,#B3E5FC); border-radius:4px;"></div>
+        </td></tr>
+
+        <tr><td style="background:#fff; padding:0 20px 40px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;">
+                <tr><td style="padding:40px 0 6px; text-align:center; font-size:24px; font-weight:900; color:#0A4A6B; line-height:1.35;">
+                    상대를 움직이는 경청의 힘,<br>나를 신뢰하게 만드는 전달의 기술
+                </td></tr>
+                <tr><td style="padding-bottom:6px; text-align:center; font-size:14px; font-weight:700; color:#0288D1;">
+                    #의사소통 &nbsp;#적극적경청 &nbsp;#효과적의사전달 &nbsp;#공감리더십
+                </td></tr>
+
+                <tr><td style="padding:22px 0 32px; font-size:16px; color:#333; line-height:1.9;">
+                    "내 말의 의도가 왜곡되어 전달된 적이 있나요?" 혹은 "상대방이 도대체 무슨 말을 하는지 파악하기 어려웠던 경험은요?" 소통의 오류는 정책 현장에서 예기치 못한 갈등과 행정력 낭비를 초래하는 가장 큰 원인이 되곤 합니다.<br><br>
+                    5급 사무관의 의사소통은 단순히 말을 잘하는 것을 넘어섭니다. 현장의 목소리에서 숨겨진 의도와 감정을 읽어내는 '경청'과, 복잡한 정책 논리를 대상의 눈높이에 맞춰 명확하게 구현하는 '전달'이 유기적으로 맞물려야 합니다.<br><br>
+                    리마인드 시리즈의 마지막인 오늘, 원활한 농정 운영의 혈맥이 되는 <strong style="color:#0A4A6B;">의사소통</strong> 역량을 통해 여러분의 소통 지수를 점검해 보겠습니다.
+                </td></tr>
+
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:linear-gradient(135deg,#F0F4F7,#E1F5FE); border:1.5px solid #B3E5FC; border-radius:16px; padding:24px 22px;">
+                        <div style="font-size:17px; font-weight:800; color:#0A4A6B; margin-bottom:14px;">📌 오늘의 리마인드 포인트</div>
+                        <ul style="margin:0; padding-left:18px;">
+                            <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">의사소통 역량의 정의와 5급 사무관에게 갖는 실무적 의미를 이해합니다.</li>
+                            <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">'적극적 경청'과 '효과적 의사전달'의 핵심 행동을 현업 예시를 통해 확인합니다.</li>
+                            <li style="font-size:15px; color:#333; line-height:1.8;">민원 현장 및 정책 현장에서의 대화 시뮬레이션을 통해 실전 소통 스킬을 익힙니다.</li>
+                        </ul>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:16px;">
+                    <span style="display:inline-block; background:#0A4A6B; color:#B3E5FC; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ①</span>
+                    <div style="font-size:21px; font-weight:900; color:#0A4A6B; line-height:1.4;">의사소통 역량이란 무엇인가?</div>
+                </td></tr>
+                <tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+                    의사소통은 단순히 정보를 주고받는 행위가 아닙니다. 이에 대한 공식 정의는 다음과 같습니다.
+                </td></tr>
+
+                <tr><td style="padding-bottom:22px;">
+                    <div style="background:#0A4A6B; border-radius:16px; padding:24px 26px;">
+                        <div style="font-size:11px; font-weight:700; color:#B3E5FC; margin-bottom:10px; letter-spacing:2px;">DEFINITION · 의사소통</div>
+                        <div style="font-size:16px; color:#fff; line-height:1.9;">
+                            "상대방의 의견을 명확히 이해하고 경청하며 <strong style="color:#B3E5FC;">자신의 의견을 논리적이고 효과적으로 전달하는 역량</strong>"
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+                    핵심 키워드는 <strong>'이해'</strong>와 <strong>'전달'</strong>입니다. <strong>상대의 의도를 정확히 파악하고 → 상황에 맞는 언어로 가공하여 → 논리적으로 전달하고 설득하는 과정</strong>입니다.
+                </td></tr>
+
+                <tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#0A4A6B;">2가지 하위요소와 행동지표</td></tr>
+                <tr><td style="padding-bottom:10px;">
+                    <div style="background:#F0F4F7; border:1.5px solid #B3E5FC; border-radius:14px; padding:20px 18px; margin-bottom:10px;">
+                        <div style="font-size:11px; font-weight:700; color:#0A4A6B; margin-bottom:6px; letter-spacing:1px;">하위요소 ①</div>
+                        <div style="font-size:16px; font-weight:900; color:#0A4A6B; margin-bottom:8px;">적극적 경청</div>
+                        <div style="font-size:14px; color:#555; line-height:1.75;">조직 구성원의 말을 적극적으로 경청하고 상황, 의도, 감정 등을 이해하는 등 편한 대화분위기를 조성함</div>
+                        <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #B3E5FC; font-size:13px; color:#0288D1; font-weight:600;">
+                            💡 현업 예시: 보조금 환수 조치에 항의하는 농민의 화난 감정을 수용하며, "회수 결정에 대한 억울함과 경영상의 막막함을 말씀하시는 것이 맞으실까요?"와 같이 상대의 의중과 상황을 재확인하여 대화를 이어가는 태도
+                        </div>
+                    </div>
+                    <div style="background:#F4E7EE; border:1.5px solid #D9B8C7; border-radius:14px; padding:20px 18px;">
+                        <div style="font-size:11px; font-weight:700; color:#A00040; margin-bottom:6px; letter-spacing:1px;">하위요소 ②</div>
+                        <div style="font-size:16px; font-weight:900; color:#884A61; margin-bottom:8px;">효과적 의사전달</div>
+                        <div style="font-size:14px; color:#555; line-height:1.75;">자신의 주장이나 의견을 상대방의 특성에 맞게 효과적으로 전달함</div>
+                        <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #D9B8C7; font-size:13px; color:#941B44; font-weight:600;">
+                            💡 현업 예시: 정책 대상의 연령이나 전문 지식 수준을 사전에 파악하여, 고령 농업인에게는 어려운 법령 용어 대신 친숙한 사례와 비유를 활용해 정책의 기대 효과와 자신의 의견을 설득력 있게 전달하는 행동
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:#FEF9E7; border:1.5px solid #F4D03F; border-radius:14px; padding:16px 18px;">
+                        <div style="font-size:13px; font-weight:800; color:#d97706; margin-bottom:10px;">📊 평가기법 매트릭스에서 의사소통 위치</div>
+                        <table cellpadding="0" cellspacing="0" style="width:100%; text-align:center;">
+                            <tr>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; text-align:left; width:40%;">평가기법</td>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">서류함</td>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">발표</td>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">역할수행</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:14px; font-weight:700; color:#E5A500; text-align:left;">의사소통</td>
+                                <td style="font-size:18px; color:#ddd;">—</td>
+                                <td style="font-size:18px; color:#E5A500;">●</td>
+                                <td style="font-size:18px; color:#E5A500;">●</td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:8px; font-size:13px; color:#777; line-height:1.7;">의사소통은 <strong>발표 및 역할수행 기법</strong>을 통해 상대방의 의도와 감정을 적극적으로 경청하며, 자신의 의견을 상대방의 특성에 맞춰 논리적이고 효과적으로 전달하는 능력을 검증합니다.</div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:16px;">
+                    <span style="display:inline-block; background:#0288D1; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ②</span>
+                    <div style="font-size:21px; font-weight:900; color:#0A4A6B; line-height:1.4;">현업에서 의사소통은<br>어떻게 나타날까?</div>
+                </td></tr>
+                <tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+                    아래 상황을 읽어보세요. 여러분의 현업 장면과 얼마나 겹치나요? 역량 행동이 나타날 수 있는 상황과 유사한 시나리오를 통해 의사소통 행동을 다시 느껴보세요.
+                </td></tr>
+
+                <tr><td style="padding-bottom:22px;">
+                    <div style="border:2px solid #e0e0e0; border-radius:16px; overflow:hidden;">
+                        <div style="background:#f5f5f5; padding:11px 20px; font-size:12px; font-weight:700; color:#666; letter-spacing:1.5px;">📋 상황 시나리오</div>
+                        <div style="padding:20px; font-size:15px; color:#333; line-height:1.9;">
+                            <strong style="color:#0A4A6B;">F 사무관</strong>은 최근 '농촌 빈집 활용 숙박업' 활성화를 위한 시범 사업을 추진 중이다. 하지만 마을 이장단은 "외부인 출입으로 마을 치안이 불안해지고 소음만 발생할 것"이라며 격렬히 반대하고 있다. 규정상 문제는 없지만, 원활한 사업 진행을 위해 <strong style="color:#0A4A6B;">F 사무관</strong>은 마을 이장님과 1:1 면담을 가졌다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:30px;">
+                    <div class="chat-container">
+                        <div class="message left">
+                            <span class="name">마을 이장</span>
+                            아이고, 사무관님! 우리 마을은 수십 년간 조용했던 곳이에요. 낯선 사람들이 들락날락하면 도난 사건도 날 거고, 밤마다 술 마시고 떠들 텐데 누가 책임질 겁니까? 절대 안 돼요!
+                        </div>
+                        <div class="message right">
+                            <span class="name">F 사무관 (적극적 경청)</span>
+                            (부드럽게 고개를 끄덕이며) 이장님, 수십 년간 지켜온 마을의 평온함과 안전이 행여나 이번 사업으로 훼손될까 봐 걱정이 정말 크시군요. 특히 야간 소음과 치안 문제를 가장 염려하시는 것으로 이해해도 될까요?
+                        </div>
+                        <div class="message left">
+                            <span class="name">마을 이장</span>
+                            말이라고 해요? 지난번 옆 동네도 펜션 들어오고 쓰레기 문제로 난리도 아니었어요. 공무원들은 서류만 보고 우리 고충은 모른다니까!
+                        </div>
+                        <div class="message right">
+                            <span class="name">F 사무관 (의중 파악 및 공감)</span>
+                            맞습니다. 쓰레기나 소음 같은 생활 불편은 직접 거주하시는 주민들께는 생존과 직결된 문제지요. 제가 이장님 말씀을 듣고 보니, 단순히 사업 반대가 아니라 '마을 관리 체계'가 먼저 서야 한다는 말씀으로 들립니다.
+                        </div>
+                        <div class="message left">
+                            <span class="name">마을 이장</span>
+                            ...그렇지. 우리 동네 규칙을 따르지 않을 거면 오지 말라는 거야. 근데 그게 맘대로 됩니까?
+                        </div>
+                        <div class="message right">
+                            <span class="name">F 사무관 (효과적 의사전달)</span>
+                            그래서 이번 사업에는 이장님 우려를 반영해 '주민 자치 관리제' 예산을 편성했습니다. 주민들이 직접 소음·쓰레기 문제를 모니터링하고, 위반 시 즉각 퇴거 조치할 수 있는 권한을 마을회에 드려 주민들의 의견이 정책 실행에 반영되도록 하는 방안입니다. 어떠신가요?
+                        </div>
+                    </div>
+                    <div style="margin-top:12px; padding:15px; background:#F0F4F7; border-radius:12px; font-size:14px; color:#0A4A6B;  line-height:1.6;">
+                        <strong>🔑 역량 발휘 포인트:</strong> 감정적인 반대 앞에서도 비언어적 공감과 재확인 질문을 통해 상대의 핵심 우려를 구체화했습니다. 이후 상대의 특성을 고려하여 '주민 권한'이라는 핵심 키워드를 통해 정책 대안을 효과적으로 전달했습니다.
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#0A4A6B;">역량 수준에 따른 행동 차이</td></tr>
+                <tr><td style="padding-bottom:28px;">
+                    <table cellpadding="0" cellspacing="0" class="compare-table" style="width:100%;">
+                        <tr>
+                            <td style="width:50%; vertical-align:top; padding-right:8px;">
+                                <div style="background:#E8FBF3; border:1.5px solid #35BD76; border-radius:14px; padding:18px 16px;">
+                                    <div style="font-size:13px; font-weight:800; color:#004D35; margin-bottom:10px;">✅ 역량 발휘 행동</div>
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">상대의 말을 끝까지 듣고 핵심 내용을 요약하여 재확인함</li>
+                                        <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">전문 용어 대신 상대방이 이해하기 쉬운 언어와 비유를 사용함</li>
+                                        <li style="font-size:14px; color:#333; line-height:1.8;">비언어적 요소(눈맞춤, 끄덕임)를 활용해 우호적 분위기를 만듦</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:50%; vertical-align:top; padding-left:8px;">
+                                <div style="background:#FFF5F5; border:1.5px solid #ffaaaa; border-radius:14px; padding:18px 16px;">
+                                    <div style="font-size:13px; font-weight:800; color:#cc3333; margin-bottom:10px;">⚠️ 역량 미흡 행동</div>
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">상대의 말이 끝나기도 전에 자신의 주장을 가로채서 말함</li>
+                                        <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">상대의 이해도와 관계없이 일방적으로 정보만 나열함</li>
+                                        <li style="font-size:14px; color:#555; line-height:1.8;">비논리적이거나 감정적인 대응으로 불필요한 오해를 삼</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;">
+                    <div style="background:#FFFBF0; border-left:4px solid #F5A623; border-radius:0 14px 14px 0; padding:18px 20px;">
+                        <div style="font-size:13px; font-weight:800; color:#995500; margin-bottom:8px;">💡 현업 적용 인사이트</div>
+                        <div style="font-size:15px; color:#333; line-height:1.85;">
+                            훌륭한 소통가는 답변하기 위해 듣지 않고 '이해하기 위해' 듣습니다. 상대방의 의도와 감정을 적극적으로 경청하여 신뢰를 쌓을 때, 여러분의 논리적인 정책 대안이 상대의 마음속에 들어갈 공간이 생깁니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:24px; text-align:center;">
+                    <span style="display:inline-block; background:linear-gradient(135deg,#0A4A6B,#0288D1); color:#fff; font-size:12px; font-weight:700; padding:5px 16px; border-radius:100px; margin-bottom:14px; letter-spacing:1.5px;">🧩 오늘의 퀴즈</span>
+                    <div style="font-size:21px; font-weight:900; color:#0A4A6B; line-height:1.4; margin-bottom:8px;">의사소통 역량,<br>얼마나 이해하셨나요?</div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:24px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div style="font-size:12px; font-weight:700; color:#0A4A6B; margin-bottom:10px;">Q 1 / 3 &nbsp;·&nbsp; 개념 이해</div>
+                        <div style="font-size:16px; font-weight:800; color:#0A4A6B; line-height:1.6; margin-bottom:18px;">
+                            다음 중 의사소통 역량의 하위요소 명칭으로 올바른 것은?
+                        </div>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">① 이해관계자요구사항파악 / 설득 및 조정</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">② 구성원 이해 및 지원 / 협력관계 구축</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',true)">③ 적극적 경청 / 효과적 의사전달</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">④ 환경 분석 / 전략방향 수립</button>
+                        <div id="q1-correct" class="quiz-feedback correct-fb">
+                            ✅ <strong>정답입니다!</strong> 의사소통의 하위요소는 '적극적 경청'과 '효과적 의사전달'입니다. ①은 협의조정, ②는 팀워크 촉진, ④는 기획력의 하위요소입니다.
+                        </div>
+                        <div id="q1-wrong" class="quiz-feedback wrong-fb">
+                            ❌ <strong>아쉽습니다!</strong> 정답은 ③번입니다.  의사소통의 하위요소는 조직 구성원의 말을 적극적으로 경청하고 상황, 의도, 감정 등을 이해하는 등 편한 대화분위기를 조성하는 '적극적 경청'과 자신의 주장이나 의견을 상대방의 특성에 맞게 효과적으로 전달하는 '효과적 의사전달'입니다. ①은 협의조정, ②는 팀워크 촉진, ④는 기획력의 하위요소입니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:24px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div style="font-size:12px; font-weight:700; color:#0A4A6B; margin-bottom:10px;">Q 2 / 3 &nbsp;·&nbsp; 현업 적용</div>
+                        <div style="font-size:16px; font-weight:800; color:#0A4A6B; line-height:1.6; margin-bottom:8px;">
+                            다음 중 의사소통 역량이 가장 우수한 사무관의 행동은?
+                        </div>
+                        <div style="font-size:14px; color:#555; line-height:1.75; margin-bottom:18px; padding:12px 16px; background:#fff; border-radius:10px; border:1px solid #e0e0e0;">
+                            <strong>상황:</strong> 가축 전염병 발생으로 긴급 이동제한 명령이 내려진 상황에서, 생계 곤란을 호소하며 거세게 항의하는 축산 농가 대표를 만났다.
+                        </div>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">① 법적 근거와 위반 시 처벌 규정을 먼저 설명하여 상황의 엄중함을 경고한다.</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">② 농가의 어려움을 충분히 이해한다고 말한 뒤, 상급자의 최종 결정을 기다리라고 안내한다.</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',true)">③ 농가의 감정을 수용하며 "피해 보상 절차와 신속한 방역 지원"에 대한 구체적인 내용을 농가 눈높이에 맞춰 설명한다.</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">④ 대화가 불가능하다고 판단하여 공식 문서를 통해 통보하겠다며 자리를 피한다.</button>
+                        <div id="q2-correct" class="quiz-feedback correct-fb">
+                            ✅ <strong>정답입니다!</strong> 상대의 감정을 수용(경청)함과 동시에 상대에게 필요한 실질적 정보를 맞춤형으로 제공(전달)한 ③번이 가장 우수한 사례입니다.
+                        </div>
+                        <div id="q2-wrong" class="quiz-feedback wrong-fb">
+                            ❌ <strong>아쉽습니다!</strong> 정답은 ③입니다. ①은 압박형 전달, ②는 소극적 소통, ④는 소통 회피입니다. 의사소통은 공감을 바탕으로 한 능동적 설득이 핵심입니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div style="font-size:12px; font-weight:700; color:#0A4A6B; margin-bottom:10px;">Q 3 / 3 &nbsp;·&nbsp; O / X 판단</div>
+                        <div style="font-size:16px; font-weight:800; color:#0A4A6B; line-height:1.6; margin-bottom:18px;">
+                           의사소통 역량의 하위요소 '적극적 경청'은 단순히 상대의 말을 듣는 것을 넘어, 편안한 대화 분위기를 조성하는 행동까지 포함한다. &nbsp;<span style="color:#0288D1;">[O / X]</span>
+                        </div>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q3',true)" style="text-align:center; font-size:18px; font-weight:900;">⭕ &nbsp;O</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q3',false)" style="text-align:center; font-size:18px; font-weight:900;">❌ &nbsp;X</button>
+                        <div id="q3-correct" class="quiz-feedback correct-fb">
+                            ✅ <strong>정답입니다!</strong> '적극적 경청'은 조직 구성원의 말을 적극적으로 경청하고 상황, 의도, 감정 등을 이해하는 등 편한 대화분위기를 조성하는 것을 의미합니다.
+                        </div>
+                        <div id="q3-wrong" class="quiz-feedback wrong-fb">
+                            ❌ <strong>아쉽습니다!</strong> 정답은 O입니다. '적극적 경청'은 조직 구성원의 말을 적극적으로 경청하고 상황, 의도, 감정 등을 이해하는 등 편한 대화분위기를 조성하는 것입니다. 의사소통은 이를 기반으로 자신의 주장과 의견을 상대방의 특성에 맞게 효과적으로 전달하는 역량입니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:16px;">
+                    <span style="display:inline-block; background:#d97706; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">셀프 체크</span>
+                    <div style="font-size:21px; font-weight:900; color:#0A4A6B; line-height:1.4;">나의 의사소통<br>현업 실천 체크리스트</div>
+                </td></tr>
+                <tr><td style="padding-bottom:6px; font-size:14px; color:#888;">최근의 회의나 면담, 현장 방문 상황을 떠올리며 체크해 보세요.</td></tr>
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">상대방이 발언하는 동안 중간에 끊지 않고 끝까지 경청한 뒤 답변했다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">"즉, ~라는 말씀이시죠?"와 같은 재확인 질문으로 상대의 의도를 명확히 파악했다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">상대방의 직급, 연령, 지식 수준을 고려하여 용어의 난이도를 조절해 설명했다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">자신의 의견을 전달할 때 결론을 먼저 제시하고, 논리적인 근거를 덧붙여 말했다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">부드러운 표정과 적절한 고개 끄덕임으로 상대방이 편안하게 말할 수 있는 분위기를 만들었다.</div>
+                        </div>
+                        <div id="checklist-result" style="display:none; margin-top:18px; padding:14px 16px; border-radius:12px; font-size:14px; line-height:1.8;"></div>
+                    </div>
+                </td></tr>
+
+
+<tr><td style="padding-bottom:30px;">
+  <div style="height:4px; background:linear-gradient(90deg,#B3E5FC,#0288D1,#0A4A6B); border-radius:4px;"></div>
+</td></tr>
+
+<tr><td style="padding-bottom:0;">
+  <div style="background:linear-gradient(135deg,#052D41,#0A4A6B); border-radius:20px; padding:34px 28px; text-align:center;">
+    <div style="font-size:12px; font-weight:700; color:#B3E5FC; letter-spacing:2.5px; margin-bottom:16px;">오늘의 성장 한 줄</div>
+    <div style="font-size:18px; font-weight:600; color:#fff; line-height:1.8; margin-bottom:14px;">
+      "가장 중요한 소통의 기술은 말하지 않는 것을 듣는 것이다."
+    </div>
+    <div style="font-size:14px; color:#B3E5FC;">— 피터 드러커 (Peter Drucker)</div>
+  </div>
+</td></tr>
+
+<tr><td style="padding:32px 20px;"><div style="height:1px; background:#ddd;"></div></td></tr>
+
+<tr><td style="padding:0 20px 24px;">
+<div style="background:#fff; border:1.5px solid #e0e0e0; border-radius:16px; padding:22px 24px; text-align:center;">
+<div style="font-size:12px; font-weight:700; color:#aaa; margin-bottom:8px; letter-spacing:2px;">NEXT EPISODE</div>
+<div style="font-size:18px; font-weight:900; color:#0A4A6B; margin-bottom:5px;">리마인드 시리즈 종료</div>
+<div style="font-size:14px; color:#777;">6편의 여정을 함께해주셔서 감사합니다.</div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 32px;">
+<div style="background:#fff; border:1.5px solid #e8e8e8; border-radius:16px; padding:28px 24px; text-align:center;">
+<div style="font-size:18px; font-weight:800; color:#222; margin-bottom:6px;">시리즈의 마지막, 어떠셨나요?</div>
+<div style="font-size:14px; color:#888; margin-bottom:20px;">여러분의 소중한 의견을 들려주세요 🚩</div>
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+<tr>
+<td style="padding-right:8px;"><span onclick="giveFeedback('good')" style="display:block; height:52px; line-height:52px; background:#F0F4F7; border:2px solid #0A4A6B; border-radius:12px; font-size:15px; font-weight:700; color:#0A4A6B; cursor:pointer; text-align:center;">도움이 됐어요 😊</span></td>
+<td style="width:12px;"></td>
+<td style="padding-left:8px;"><span onclick="giveFeedback('bad')" style="display:block; height:52px; line-height:52px; background:#fafafa; border:2px solid #ccc; border-radius:12px; font-size:15px; font-weight:700; color:#888; cursor:pointer; text-align:center;">아쉬웠어요 🤔</span></td>
+</tr>
+</table>
+<div id="feedback-msg" style="display:none; margin-top:14px; font-size:14px; font-weight:600;"></div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 50px; text-align:center;">
+<div style="border-top:1px solid #e8e8e8; padding-top:24px;">
+<div style="font-size:20px; font-weight:900; color:#0A4A6B; margin-bottom:6px;">ASSESTA</div>
+<div style="font-size:13px; color:#aaa; line-height:1.6;">본 메일은 농림축산식품부 5급 역량 교육의 일환으로 발송되었습니다.<br>
+무단 전재 및 재배포를 금합니다. Copyright 2026. ASSESTA.</div>
+</div>
+</td></tr>
+
+</table>
+</div>
+
+<script>
+function checkQuiz(btn, qId, isCorrect) {
+var parent = btn.parentElement;
+var options = parent.querySelectorAll('.quiz-option');
+options.forEach(function(opt) { opt.classList.add('disabled'); });
+
+if (isCorrect) {
+btn.classList.add('correct');
+document.getElementById(qId + '-correct').classList.add('show');
+} else {
+btn.classList.add('wrong');
+document.getElementById(qId + '-wrong').classList.add('show');
+}
+}
+
+var checkCount = 0;
+function toggleCheck(item) {
+var box = item.querySelector('.checklist-box');
+var text = item.querySelector('.checklist-text');
+var result = document.getElementById('checklist-result');
+var total = document.querySelectorAll('.checklist-item').length;
+
+if (box.classList.contains('checked')) {
+box.classList.remove('checked');
+text.classList.remove('done');
+checkCount = Math.max(0, checkCount - 1);
+} else {
+box.classList.add('checked');
+text.classList.add('done');
+checkCount++;
+}
+
+if (checkCount === 0) { result.style.display = 'none'; return; }
+result.style.display = 'block';
+if (checkCount === total) {
+result.style.background='#E8FBF3'; result.style.color='#004d35';
+result.innerHTML='🌟 <strong>5개 모두 체크!</strong> 의사소통 역량을 현업에서 충실히 실천하고 계시네요. 공감을 바탕으로 신뢰받는 최고의 리더입니다.';
+} else if (checkCount >= 3) {
+result.style.background='#F0F4F7'; result.style.color='#0A4A6B';
+result.innerHTML='👍 <strong>' + checkCount + '개 체크!</strong> 잘 실천하고 계십니다. 체크하지 못한 항목을 다음 동료·유관기관·민원인 등과의 모든 일상적인 업무 소통 시 의식적으로 적용해 보세요.';
+} else {
+result.style.background='#FFFBF0'; result.style.color='#7a4f00';
+result.innerHTML='📝 <strong>' + checkCount + '개 체크.</strong> 체크하지 못한 항목이 주요 개발 포인트입니다. 대화 시 상대방의 말을 끝까지 경청한 뒤 "즉, ~라는 말씀이시죠?"라고 재확인하는 것부터 적용해 보세요!';
+}
+}
+
+function giveFeedback(type) {
+var msg = document.getElementById('feedback-msg');
+msg.style.display = 'block';
+if (type === 'good') {
+msg.style.color = '#0A4A6B';
+msg.innerHTML = '전체 시리즈를 애독해주셔서 감사합니다! 큰 힘이 됩니다.';
+} else {
+msg.style.color = '#888';
+msg.innerHTML = '보내주신 소중한 의견은 다음 콘텐츠 개발에 반영하겠습니다.';
+}
+}
+</script>
+
+</body>
+</html>

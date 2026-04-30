@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>농림축산식품부 5급 역량 리마인드 | 1편. 기획력</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* { box-sizing: border-box; }
+body { font-family: "Pretendard Variable", Pretendard, sans-serif; margin: 0; padding: 0; background: #f2f4f7; }
+
+.quiz-option {
+display: block; width: 100%; padding: 14px 18px; margin-bottom: 10px;
+background: #fff; border: 2px solid #ddd; border-radius: 12px;
+font-size: 15px; font-weight: 500; color: #222; cursor: pointer; text-align: left;
+font-family: "Pretendard Variable", Pretendard, sans-serif;
+transition: border-color .2s, background .2s; line-height: 1.6;
+}
+.quiz-option:hover  { border-color: #1A3A5C; background: #F0F4F8; }
+.quiz-option.correct{ border-color: #00B074; background: #E8FBF3; color: #005c3a; font-weight: 700; }
+.quiz-option.wrong  { border-color: #FF4D4D; background: #FFF0F0; color: #aa0000; }
+.quiz-option.disabled{ cursor: default; pointer-events: none; }
+
+.quiz-feedback { display: none; margin-top: 12px; padding: 14px 16px; border-radius: 12px; font-size: 15px; line-height: 1.7; font-family: "Pretendard Variable", Pretendard, sans-serif; }
+.quiz-feedback.correct-fb { background: #E8FBF3; border-left: 4px solid #00B074; color: #004d35; }
+.quiz-feedback.wrong-fb   { background: #FFF0F0; border-left: 4px solid #FF4D4D; color: #7a0000; }
+.quiz-feedback.show { display: block; }
+
+.checklist-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; cursor: pointer; }
+.checklist-box  { width: 24px; height: 24px; min-width: 24px; border: 2px solid #1A3A5C; border-radius: 6px; display: flex; align-items: center; justify-content: center; transition: background .2s; margin-top: 1px; background: #fff; }
+.checklist-box.checked { background: #1A3A5C; border-color: #1A3A5C; }
+.check-mark { display: none; color: #fff; font-size: 14px; font-weight: 800; }
+.checklist-box.checked .check-mark { display: block; }
+.checklist-text { font-size: 15px; color: #333; line-height: 1.7; transition: color .2s; }
+.checklist-text.done { color: #aaa; text-decoration: line-through; }
+
+@media (max-width: 480px) {
+.sub-card-table td { display: block !important; width: 100% !important; padding: 0 0 10px 0 !important; }
+.compare-table td  { display: block !important; width: 100% !important; padding: 0 0 12px 0 !important; }
+}
+</style>
+</head>
+<body>
+<div style="width:100%; background:#f2f4f7;">
+<table cellpadding="0" cellspacing="0" style="width:100%; max-width:640px; margin:0 auto; padding:40px 0 60px; table-layout:fixed; letter-spacing:-0.3px;">
+
+<tr><td style="padding:0 20px 24px;">
+<div style="background:linear-gradient(135deg,#1A3A5C,#2E7EFF); border-radius:20px; padding:32px 28px; text-align:center;">
+<div style="font-size:12px; font-weight:700; color:#D6E4FF; letter-spacing:2.5px; margin-bottom:10px;">농림축산식품부 5급 역량 리마인드 시리즈</div>
+<div style="font-size:26px; font-weight:900; color:#fff; line-height:1.35; margin-bottom:8px;">정책의 지도를 그리다,<br>미래를 설계하는 리더십</div>
+<div style="font-size:14px; color:#D6E4FF;">평가 이후에도 역량은 계속됩니다 · ⓒ ASSESTA</div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 8px; text-align:center;">
+<span style="display:inline-block; background:#fff; border:2px solid #1A3A5C; border-radius:100px; padding:6px 20px; font-size:13px; font-weight:700; color:#1A3A5C;">1편 · 기획력 &nbsp;/&nbsp; 총 6편 시리즈</span>
+<div style="margin-top:8px; font-size:13px; color:#888;">농림축산식품부 5급 역량평가 수료자 대상</div>
+</td></tr>
+
+<tr><td style="padding:20px 20px 0;">
+<div style="height:4px; background:linear-gradient(90deg,#1A3A5C,#2E7EFF,#D6E4FF); border-radius:4px;"></div>
+</td></tr>
+
+<tr><td style="background:#fff; padding:0 20px;">
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+
+<tr><td style="padding:40px 0 6px; text-align:center; font-size:24px; font-weight:900; color:#1A3A5C; line-height:1.35;">
+  거시적 변화를 읽고,<br>조직의 나침반을 세우는 힘
+</td></tr>
+<tr><td style="padding-bottom:6px; text-align:center; font-size:14px; font-weight:700; color:#2E7EFF;">
+  #기획력 &nbsp;#환경분석 &nbsp;#전략방향수립 &nbsp;#5급리더
+</td></tr>
+
+<tr><td style="padding:22px 0 32px; font-size:16px; color:#333; line-height:1.9;">
+  기후변화에 따른 수급 불안정, 인구 감소로 인한 농촌 소멸 위기, 그리고 푸드테크 혁신까지. 농림축산식품부 사무관은 매일 복합적인 정책 환경 속에서 최적의 해법을 찾아야 합니다.<br><br>
+  "이 정책이 우리 부의 핵심 목표와 정렬되어 있는가?"라는 질문은 기획의 시작이자 끝입니다.<br><br>
+  역량평가에서 보여주셨던 날카로운 분석력은 실전에서 더욱 빛을 발해야 합니다. 단순한 현상 파악을 넘어 변화가 조직에 미칠 영향을 예측하고, 정책 효과를 고려하여 최적의 추진 방향을 설정하는 기획력은 농업·농촌의 미래를 결정짓는 핵심 엔진이 됩니다.<br><br>
+  리마인드 시리즈의 첫 번째 시간, <strong style="color:#1A3A5C;">기획력</strong>의 가치를 다시 한번 점검해 보겠습니다.
+</td></tr>
+
+<tr><td style="padding-bottom:32px;">
+  <div style="background:linear-gradient(135deg,#F0F4F8,#E6EEF5); border:1.5px solid #D6E4FF; border-radius:16px; padding:24px 22px;">
+    <div style="font-size:17px; font-weight:800; color:#1A3A5C; margin-bottom:14px;">📌 오늘의 리마인드 포인트</div>
+    <ul style="margin:0; padding-left:18px;">
+      <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">농식품부 역량모델에 기반한 기획력의 본질과 의미를 이해합니다.</li>
+      <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">'환경 분석'과 '전략방향 수립'의 핵심 행동을 현업 예시를 통해 확인합니다.</li>
+      <li style="font-size:15px; color:#333; line-height:1.8;">농촌 공간 재구조화 시나리오를 통해 전략적 기획 프로세스를 복습합니다.</li>
+    </ul>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:16px;">
+  <span style="display:inline-block; background:#1A3A5C; color:#D6E4FF; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ①</span>
+  <div style="font-size:21px; font-weight:900; color:#1A3A5C; line-height:1.4;">기획력 역량이란 무엇인가?</div>
+</td></tr>
+<tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+  기획력은 단순히 보고서의 형식을 갖추거나 과거 자료를 요약하는 기술이 아닙니다. 이에 대한 공식 정의는 다음과 같습니다.
+</td></tr>
+
+<tr><td style="padding-bottom:22px;">
+  <div style="background:#1A3A5C; border-radius:16px; padding:24px 26px;">
+    <div style="font-size:11px; font-weight:700; color:#D6E4FF; margin-bottom:10px; letter-spacing:2px;">DEFINITION · 기획력</div>
+    <div style="font-size:16px; color:#fff; line-height:1.9;">
+       "내·외부 <strong style="color:#D6E4FF;">거시적 변화 상황과 정보를 분석</strong>하여 조직 목표와의 연계성을 파악하고 <strong style="color:#D6E4FF;">우선순위를 고려해 정책 방향성을 수립</strong>하는 역량"
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+  핵심 키워드는 <strong>'변화 분석'</strong>과 <strong>'목표 연계'</strong>입니다. 기획력은 <strong>환경 변화가 미칠 영향을 예측하고 → 조직의 목표와 연계하여 변화 필요성을 파악한 뒤 → 정책 효과성에 따라 우선순위를 설정하여 정책 방향을 수립하는 과정</strong>입니다.
+</td></tr>
+
+<tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#1A3A5C;">2가지 하위요소와 행동지표</td></tr>
+<tr><td style="padding-bottom:10px;">
+  <div style="background:#F0F4F8; border:1.5px solid #D6E4FF; border-radius:14px; padding:20px 18px; margin-bottom:10px;">
+    <div style="font-size:11px; font-weight:700; color:#1A3A5C; margin-bottom:6px; letter-spacing:1px;">하위요소 ①</div>
+    <div style="font-size:16px; font-weight:900; color:#1A3A5C; margin-bottom:8px;">환경 분석</div>
+    <div style="font-size:14px; color:#555; line-height:1.75;">내·외부 환경 변화가 조직에 미치는 영향을 예측하고 변화 필요성을 파악함</div>
+    <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #D6E4FF; font-size:13px; color:#2E7EFF; font-weight:600;">
+      💡 실무 예시: 글로벌 공급망 위기를 단순한 물가 이슈로 보지 않고, 식량주권 확보와 연계하여 우리 부 핵심 정책의 변화 필요성을 선제적으로 도출하는 태도
+   </div>
+  </div>
+  <div style="background:#F4E7EE; border:1.5px solid #D9B8C7; border-radius:14px; padding:20px 18px;">
+    <div style="font-size:11px; font-weight:700; color:#A00040; margin-bottom:6px; letter-spacing:1px;">하위요소 ②</div>
+    <div style="font-size:16px; font-weight:900; color:#884A61; margin-bottom:8px;">전략방향 수립</div>
+    <div style="font-size:14px; color:#555; line-height:1.75;">정책 효과성과 파급효과에 따른 우선순위를 고려하여 정책 방향을 수립함</div>
+    <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #D9B8C7; font-size:13px; color:#941B44; font-weight:600;">
+      💡 실무 예시: 농촌 공간 재구조화 추진 시, 지역별 특성에 따른 정책 파급력을 고려하여 거점 지역 활성화와 공간 정비의 우선순위를 결정하고 구체적인 정책 추진 방향을 설정하는 행동
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:32px;">
+  <div style="background:#FEF9E7; border:1.5px solid #F4D03F; border-radius:14px; padding:16px 18px;">
+    <div style="font-size:13px; font-weight:800; color:#d97706; margin-bottom:10px;">📊 평가기법 매트릭스에서 기획력 위치</div>
+    <table cellpadding="0" cellspacing="0" style="width:100%; text-align:center;">
+      <tr>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; text-align:left; width:40%;">평가기법</td>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">서류함</td>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">발표</td>
+        <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">역할수행</td>
+      </tr>
+      <tr>
+        <td style="font-size:14px; font-weight:700; color:#E5A500; text-align:left;">기획력</td>
+        <td style="font-size:18px; color:#E5A500;">●</td>
+        <td style="font-size:18px; color:#ddd;">—</td>
+        <td style="font-size:18px; color:#E5A500;">●</td>
+      </tr>
+    </table>
+    <div style="margin-top:8px; font-size:13px; color:#777; line-height:1.7;">기획력은 주로 <strong>서류함 및 역할수행 기법</strong>을 통해 내·외부 환경 변화를 분석하고, 정책 효과성과 파급효과를 고려하여 조직의 목표와 연계된 최적의 정책 방향을 수립하는 능력을 검증합니다.</div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:16px;">
+    <span style="display:inline-block; background:#2E7EFF; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ②</span>
+  <div style="font-size:21px; font-weight:900; color:#1A3A5C; line-height:1.4;">현업에서 기획력은<br>어떻게 나타날까?</div>
+</td></tr>
+<tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+  아래 상황을 읽어보세요. 여러분의 현업 장면과 얼마나 겹치나요?
+</td></tr>
+
+<tr><td style="padding-bottom:22px;">
+  <div style="border:2px solid #e0e0e0; border-radius:16px; overflow:hidden;">
+    <div style="background:#f5f5f5; padding:11px 20px; font-size:12px; font-weight:700; color:#666; letter-spacing:1.5px;">📋 현업 시나리오</div>
+    <div style="padding:20px; font-size:15px; color:#333; line-height:1.9;">
+      <strong style="color:#1A3A5C;">A 사무관</strong>은 농촌 소멸 위기 대응을 위한 '농촌 공간 재구조화 및 재생 지원 정책'의 중장기 로드맵 수립을 담당하게 되었다. 최근 귀농·귀촌 인구의 흐름이 다변화되고 있으나, 정주 여건과 일자리 정책의 연계 미흡으로 인해 실제 정착 효과는 기대에 못 미치는 상황이다. 국회와 현장에서는 일회성 시설 지원이 아닌 근본적인 공간 혁신을 요구하고 있다. <strong style="color:#1A3A5C;">A 사무관</strong>은 정부의 '활력 넘치는 농촌 조성'이라는 핵심 국정 목표와 연계하여, 농촌의 지속 가능성을 확보할 수 있는 정책의 큰 그림을 그려야 한다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:30px;">
+  <div style="border: 1px solid #e0e0e0; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    <div style="background: linear-gradient(135deg, #1A3A5C 0%, #2E7EFF 100%); padding: 16px 24px;">
+      <div style="display: flex; align-items: center;">
+        <span style="background: rgba(255,255,255,0.2); border-radius: 4px; padding: 4px 8px; font-size: 11px; color: #fff; font-weight: 700; letter-spacing: 1px; margin-right: 12px;">CASE STUDY</span>
+        <span style="font-size: 16px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">주제: 농촌 공간 재구조화 전략 기획</span>
+      </div>
+    </div>
+
+    <div style="padding: 28px 24px; background: #ffffff;">
+      <div style="margin-bottom: 30px;">
+        <div style="display: inline-block; border-bottom: 2px solid #1A3A5C; margin-bottom: 16px; padding-bottom: 4px;">
+          <span style="font-size: 15px; font-weight: 800; color: #1A3A5C;">[현황 및 환경 분석]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="background: #fdfdfd; border: 1px solid #f0f0f0; border-left: 4px solid #1A3A5C; border-radius: 8px; padding: 14px 18px;">
+            <div style="font-size: 14px; line-height: 1.7; color: #333;">
+              <strong style="color: #1A3A5C; font-weight: 800; margin-right: 8px;">① 거시 트렌드 예측:</strong>
+              농촌 지역별 소멸 위험도 및 청년층의 이동 패턴 분석을 통한 정책 변화 필요성 도출
+            </div>
+          </div>
+          <div style="background: #fdfdfd; border: 1px solid #f0f0f0; border-left: 4px solid #1A3A5C; border-radius: 8px; padding: 14px 18px;">
+            <div style="font-size: 14px; line-height: 1.7; color: #333;">
+              <strong style="color: #1A3A5C; font-weight: 800; margin-right: 8px;">② 조직 목표 연계:</strong>
+              부처 핵심 과제인 '농촌 공간 기능의 다변화'와 현재 추진 중인 재생 사업의 정렬 상태 검토
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin: -10px 0 20px 0;">
+        <span style="color: #e0e0e0; font-size: 20px;">▼</span>
+      </div>
+
+      <div style="background: #F0F4F8; border: 1px dashed #2E7EFF; border-radius: 12px; padding: 20px;">
+        <div style="margin-bottom: 12px;">
+          <span style="font-size: 15px; font-weight: 800; color: #1A3A5C;">[전략 방향 수립 결과]</span>
+        </div>
+        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+          <tr>
+            <td style="vertical-align: top; width: 50px; padding-top: 2px;">
+              <span style="background: #2E7EFF; color: #fff; font-size: 11px; font-weight: 800; padding: 2px 6px; border-radius: 4px;">단기</span>
+            </td>
+            <td style="font-size: 14px; color: #444; line-height: 1.7;">
+              농촌 공간 기능 분리(주거/산업/보호)를 위한 선도 지구 지정 및 지자체 협약 기반 추진 방향 설정
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 50px; padding-top: 2px;">
+              <span style="background: #1A3A5C; color: #fff; font-size: 11px; font-weight: 800; padding: 2px 6px; border-radius: 4px;">중기</span>
+            </td>
+            <td style="font-size: 14px; color: #444; line-height: 1.7; padding-top: 8px;">
+              생활권 단위 서비스 통합 제공 모델을 정립하여 전국 단위 확산을 위한 정책 로드맵 완성
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#1A3A5C;">역량 수준에 따른 행동 차이</td></tr>
+<tr><td style="padding-bottom:28px;">
+  <table cellpadding="0" cellspacing="0" class="compare-table" style="width:100%;">
+    <tr>
+      <td style="width:50%; vertical-align:top; padding-right:8px;">
+        <div style="background:#E8FBF3; border:1.5px solid #35BD76; border-radius:14px; padding:18px 16px;">
+          <div style="font-size:13px; font-weight:800; color:#004D35; margin-bottom:10px;">✅ 역량 발휘 행동</div>
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">핵심 국정과제 및 부처 목표와 사업의 정렬 상태를 분석하여 명확한 기획 근거를 제시함</li>
+            <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">정책 파급효과가 큰 핵심 과제를 식별하여 추진 우선순위에 따른 전략 방향을 설정함</li>
+            <li style="font-size:14px; color:#333; line-height:1.8;">거시적 환경 변화(디지털, 기후 등)를 반영하여 정책의 필요성을 선제적으로 정의함</li>
+          </ul>
+        </div>
+      </td>
+      <td style="width:50%; vertical-align:top; padding-left:8px;">
+        <div style="background:#FFF5F5; border:1.5px solid #ffaaaa; border-radius:14px; padding:18px 16px;">
+          <div style="font-size:13px; font-weight:800; color:#cc3333; margin-bottom:10px;">⚠️ 역량 미흡 행동</div>
+          <ul style="margin:0; padding-left:16px;">
+            <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">환경 변화의 영향을 간과하고 전년도 사업 내용을 답습하여 추진 방향을 설정함</li>
+            <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">조직 목표와의 연계성 검토 없이 개별 민원이나 단기 현안 해결 위주로 기획함</li>
+            <li style="font-size:14px; color:#555; line-height:1.8;">정책 효과성에 대한 고려 없이 나열식으로 대안을 제시하여 방향성이 모호해짐</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;">
+  <div style="background:#FFFBF0; border-left:4px solid #F5A623; border-radius:0 14px 14px 0; padding:18px 20px;">
+    <div style="font-size:13px; font-weight:800; color:#995500; margin-bottom:8px;">💡 현업 적용 인사이트</div>
+    <div style="font-size:15px; color:#333; line-height:1.85;">
+      기획은 단순히 할 일을 정하는 것이 아니라, 조직의 목표 달성을 위해 '변화의 흐름 위에서 최적의 방향'을 잡는 것입니다. 항상 정책의 목적지가 내·외부 환경 변화와 일치하는지 점검하며 전략적 우선순위를 판단해 보세요.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:24px; text-align:center;">
+  <span style="display:inline-block; background:linear-gradient(135deg,#1A3A5C,#2E7EFF); color:#fff; font-size:12px; font-weight:700; padding:5px 16px; border-radius:100px; margin-bottom:14px; letter-spacing:1.5px;">🧩 오늘의 퀴즈</span>
+  <div style="font-size:21px; font-weight:900; color:#1A3A5C; line-height:1.4; margin-bottom:8px;">기획력 역량,<br>얼마나 이해하셨나요?</div>
+</td></tr>
+
+<tr><td style="padding-bottom:24px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div style="font-size:12px; font-weight:700; color:#1A3A5C; margin-bottom:10px;">Q 1 / 3 &nbsp;·&nbsp; 개념 이해</div>
+    <div style="font-size:16px; font-weight:800; color:#1A3A5C; line-height:1.6; margin-bottom:18px;">
+      다음 중 농림축산식품부 5급 역량모델 상 '기획력'의 정의로 가장 적절한 것은?
+    </div>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">① 발생한 문제의 핵심을 파악하여 문제를 해결하기 위한 최적의 대안을 도출하는 역량</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',true)">② 내·외부 거시적 변화 상황과 정보를 분석하여 조직 목표와의 연계성을 파악하고 우선순위를 고려해 정책 방향을 수립하는 역량</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">③ 목표를 달성하기 위한 세부 실행계획을 수립하고 실행 과정을 점검 및 관리하는 역량</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">④ 이해관계자들의 입장과 요구사항을 파악하고 합리적이고 상호 수용가능한 조정안을 제시하는 역량</button>
+    <div id="q1-correct" class="quiz-feedback correct-fb">
+      ✅ <strong>정답입니다!</strong> ②번은 기획력의 공식 정의입니다. 기획력의 하위요소는 내·외부 환경 변화가 조직에 미치는 영향을 예측하고 변화 필요성을 파악하는 '환경 분석'과 정책 효과성과 파급효과에 따른 우선순위를 고려하여 정책 방향을 수립하는 '전략방향 수립'이 있습니다.  ①은 문제대응력, ③은 실행관리, ④는 협의조정 역량의 정의입니다.
+    </div>
+    <div id="q1-wrong" class="quiz-feedback wrong-fb">
+      ❌ <strong>아쉽습니다!</strong> 정답은 ②입니다. 기획력은 내·외부 거시적 변화 상황과 정보를 분석하여 조직 목표와의 연계성을 파악하고 우선순위를 고려해 정책 방향을 수립하는 역량입니다. ①은 문제대응력, ③은 실행관리, ④는 협의조정 역량의 정의입니다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:24px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div style="font-size:12px; font-weight:700; color:#1A3A5C; margin-bottom:10px;">Q 2 / 3 &nbsp;·&nbsp; 현업 적용</div>
+    <div style="font-size:16px; font-weight:800; color:#1A3A5C; line-height:1.6; margin-bottom:8px;">
+      농촌 인력 부족 문제 해결을 위한 기획 시, 기획력 역량이 가장 우수한 사무관의 행동은?
+    </div>
+    <div style="font-size:14px; color:#555; line-height:1.75; margin-bottom:18px; padding:12px 16px; background:#fff; border-radius:10px; border:1px solid #e0e0e0;">
+      <strong>상황:</strong> 고령화로 인한 '농촌 인력 부족' 문제를 해결하기 위한 신규 사업 기획안을 작성 중이다.
+    </div>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">① 현행 인력 지원 사업의 프로세스를 개선하여 행정 편의를 높인다.</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">② 예산 확보를 위해 국회 및 기획재정부 대응 논리 개발에만 집중한다.</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',true)">③ 농업의 디지털 전환 트렌드를 반영하여 '스마트 농업 및 자동화'와 연계된 중장기 인력 대체 전략을 수립한다.</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">④ 농가의 요구사항을 모두 반영하여 지원 대상을 최대한 확대한다.</button>
+    <div id="q2-correct" class="quiz-feedback correct-fb">
+      ✅ <strong>정답입니다!</strong> 외부 트렌드(디지털 전환)를 읽고 부처 핵심 목표와 연계하여 미래지향적 대안을 제시한 ③번이 기획력의 정석입니다.
+    </div>
+    <div id="q2-wrong" class="quiz-feedback wrong-fb">
+      ❌ <strong>아쉽습니다!</strong> 정답은 ③입니다. ①은 단순 관리, ②는 수단에 매몰, ④는 우선순위 부재를 나타냅니다. 기획력은 '변화 분석'과 '전략적 연계'가 핵심입니다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:32px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div style="font-size:12px; font-weight:700; color:#1A3A5C; margin-bottom:10px;">Q 3 / 3 &nbsp;·&nbsp; O / X 판단</div>
+    <div style="font-size:16px; font-weight:800; color:#1A3A5C; line-height:1.6; margin-bottom:18px;">
+      기획력의 하위요소 중 '전략방향 수립' 시 가장 먼저 고려해야 할 기준은 사업 추진의 예산 규모와 행정적 용이성이다. &nbsp;<span style="color:#2E7EFF;">[O / X]</span>
+    </div>
+    <button class="quiz-option" onclick="checkQuiz(this,'q3',false)" style="text-align:center; font-size:18px; font-weight:900;">⭕ &nbsp;O</button>
+    <button class="quiz-option" onclick="checkQuiz(this,'q3',true)" style="text-align:center; font-size:18px; font-weight:900;">❌ &nbsp;X</button>
+    <div id="q3-correct" class="quiz-feedback correct-fb">
+      ✅ <strong>정답입니다!</strong>  ‘전략방향 수립’의 핵심 기준은 예산이 아니라 정책 효과성과 파급효과입니다.
+    </div>
+    <div id="q3-wrong" class="quiz-feedback wrong-fb">
+      ❌ <strong>아쉽습니다!</strong> 정답은 X입니다. ‘전략방향 수립’ 시 가장 먼저 고려해야 할 기준은 정책 효과성과 파급효과입니다. 기획력은 환경 분석을 바탕으로 정책의 우선순위를 고려해 정책 방향성을 수립하는 역량입니다.
+    </div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+<tr><td style="padding-bottom:16px;">
+  <span style="display:inline-block; background:#d97706; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">셀프 체크</span>
+  <div style="font-size:21px; font-weight:900; color:#1A3A5C; line-height:1.4;">나의 기획력<br>현업 실천 체크리스트</div>
+</td></tr>
+<tr><td style="padding-bottom:6px; font-size:14px; color:#888;">최근의 정책 수립이나 업무 기획을 떠올리며 체크해 보세요.</td></tr>
+<tr><td style="padding-bottom:32px;">
+  <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">정책 기획 전, 농식품 분야의 최신 트렌드(푸드테크, 기후대응 등)가 미칠 영향을 분석했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">수립 중인 정책이 우리 부 핵심 국정과제나 실·국 목표와 정렬되어 있는지 확인했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">다양한 대안 중 정책 파급효과와 시급성이 가장 큰 과제를 우선순위로 선정했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">단순한 현상 대응을 넘어, 이 정책이 농업 현장에 가져올 미래의 변화상을 구체화했다.</div>
+    </div>
+    <div class="checklist-item" onclick="toggleCheck(this)">
+      <div class="checklist-box"><span class="check-mark">✓</span></div>
+      <div class="checklist-text">데이터와 객관적 근거에 기반하여 정책의 논리적 타당성을 확보했다.</div>
+    </div>
+    <div id="checklist-result" style="display:none; margin-top:18px; padding:14px 16px; border-radius:12px; font-size:14px; line-height:1.8;"></div>
+  </div>
+</td></tr>
+
+<tr><td style="padding-bottom:30px;">
+  <div style="height:4px; background:linear-gradient(90deg,#D6E4FF,#2E7EFF,#1A3A5C); border-radius:4px;"></div>
+</td></tr>
+
+<tr><td style="padding-bottom:0;">
+  <div style="background:linear-gradient(135deg,#0D1C2D,#1A3A5C); border-radius:20px; padding:34px 28px; text-align:center;">
+    <div style="font-size:12px; font-weight:700; color:#D6E4FF; letter-spacing:2.5px; margin-bottom:16px;">오늘의 성장 한 줄</div>
+    <div style="font-size:18px; font-weight:600; color:#fff; line-height:1.8; margin-bottom:14px;">
+      "기획이란 미래에 관한 현재의 결정이다."
+    </div>
+    <div style="font-size:14px; color:#D6E4FF;">— 피터 드러커 (Peter Drucker)</div>
+  </div>
+</td></tr>
+
+<tr><td style="padding:32px 20px;"><div style="height:1px; background:#ddd;"></div></td></tr>
+
+<tr><td style="padding:0 20px 24px;">
+<div style="background:#fff; border:1.5px solid #e0e0e0; border-radius:16px; padding:22px 24px; text-align:center;">
+<div style="font-size:12px; font-weight:700; color:#aaa; margin-bottom:8px; letter-spacing:2px;">NEXT EPISODE</div>
+<div style="font-size:18px; font-weight:900; color:#1A3A5C; margin-bottom:5px;">2편 · 문제대응력</div>
+<div style="font-size:14px; color:#777;">현상의 이면을 꿰뚫고, 최적의 해법으로 돌파하는 힘</div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 32px;">
+<div style="background:#fff; border:1.5px solid #e8e8e8; border-radius:16px; padding:28px 24px; text-align:center;">
+<div style="font-size:18px; font-weight:800; color:#222; margin-bottom:6px;">오늘의 리마인드는 어떠셨나요?</div>
+<div style="font-size:14px; color:#888; margin-bottom:20px;">여러분의 피드백이 콘텐츠를 더 좋게 만듭니다 🚩</div>
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+<tr>
+<td style="padding-right:8px;"><span onclick="giveFeedback('good')" style="display:block; height:52px; line-height:52px; background:#F0F4F8; border:2px solid #1A3A5C; border-radius:12px; font-size:15px; font-weight:700; color:#1A3A5C; cursor:pointer; text-align:center;">도움이 됐어요 😊</span></td>
+<td style="width:12px;"></td>
+<td style="padding-left:8px;"><span onclick="giveFeedback('bad')" style="display:block; height:52px; line-height:52px; background:#fafafa; border:2px solid #ccc; border-radius:12px; font-size:15px; font-weight:700; color:#888; cursor:pointer; text-align:center;">아쉬웠어요 🤔</span></td>
+</tr>
+</table>
+<div id="feedback-msg" style="display:none; margin-top:14px; font-size:14px; font-weight:600;"></div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 50px; text-align:center;">
+<div style="border-top:1px solid #e8e8e8; padding-top:24px;">
+<div style="font-size:20px; font-weight:900; color:#1A3A5C; margin-bottom:6px;">ASSESTA</div>
+<div style="font-size:13px; color:#aaa; line-height:1.6;">본 메일은 농림축산식품부 5급 역량 교육의 일환으로 발송되었습니다.<br>
+무단 전재 및 재배포를 금합니다. Copyright 2026. ASSESTA.</div>
+</div>
+</td></tr>
+
+</table>
+</div>
+
+<script>
+function checkQuiz(btn, qId, isCorrect) {
+var parent = btn.parentElement;
+var options = parent.querySelectorAll('.quiz-option');
+options.forEach(function(opt) { opt.classList.add('disabled'); });
+
+if (isCorrect) {
+btn.classList.add('correct');
+document.getElementById(qId + '-correct').classList.add('show');
+} else {
+btn.classList.add('wrong');
+document.getElementById(qId + '-wrong').classList.add('show');
+}
+}
+
+var checkCount = 0;
+function toggleCheck(item) {
+var box = item.querySelector('.checklist-box');
+var text = item.querySelector('.checklist-text');
+var result = document.getElementById('checklist-result');
+var total = document.querySelectorAll('.checklist-item').length;
+
+if (box.classList.contains('checked')) {
+box.classList.remove('checked');
+text.classList.remove('done');
+checkCount = Math.max(0, checkCount - 1);
+} else {
+box.classList.add('checked');
+text.classList.add('done');
+checkCount++;
+}
+
+if (checkCount === 0) { result.style.display = 'none'; return; }
+result.style.display = 'block';
+if (checkCount === total) {
+result.style.background='#E8FBF3'; result.style.color='#004d35';
+result.innerHTML='🌟 <strong>5개 모두 체크!</strong> 기획력을 현업에서 충실히 실천하고 계시네요. 조직의 미래를 밝히는 핵심 리더입니다.';
+} else if (checkCount >= 3) {
+result.style.background='#F0F8F4'; result.style.color='#1A3A5C';
+result.innerHTML='👍 <strong>' + checkCount + '개 체크!</strong> 잘 실천하고 계십니다. 체크하지 못한 항목을 다음 정책 수립이나 사업 기획 시 의식적으로 적용해 보세요.';
+} else {
+result.style.background='#FFFBF0'; result.style.color='#7a4f00';
+result.innerHTML='📝 <strong>' + checkCount + '개 체크.</strong> 체크하지 못한 항목이 주요 개발 포인트입니다. 우리 부 핵심 국정과제나 실·국 목표를 먼저 살피고 업무의 방향성을 맞추는 것부터 시작해 보세요!';
+}
+}
+
+function giveFeedback(type) {
+var msg = document.getElementById('feedback-msg');
+msg.style.display = 'block';
+if (type === 'good') {
+msg.style.color = '#1A3A5C';
+msg.innerHTML = '감사합니다! 긍정적인 피드백이 큰 힘이 됩니다. 더 유익한 시리즈로 보답하겠습니다.';
+} else {
+msg.style.color = '#888';
+msg.innerHTML = '소중한 의견 감사합니다. 더 나은 콘텐츠를 위해 적극적으로 보완하겠습니다.';
+}
+}
+</script>
+</body>
+</html>

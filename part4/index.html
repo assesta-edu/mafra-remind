@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>농림축산식품부 5급 역량 리마인드 | 4편. 협의조정</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        * { box-sizing: border-box; }
+        body { font-family: "Pretendard Variable", Pretendard, sans-serif; margin: 0; padding: 0; background: #f2f4f7; }
+        .quiz-option { display: block; width: 100%; padding: 14px 18px; margin-bottom: 10px; background: #fff; border: 2px solid #ddd; border-radius: 12px; font-size: 15px; font-weight: 500; color: #222; cursor: pointer; text-align: left; font-family: "Pretendard Variable", Pretendard, sans-serif; transition: border-color .2s, background .2s; line-height: 1.6; }
+        .quiz-option:hover { border-color: #2D1B69; background: #F3F1F9; }
+        .quiz-option.correct { border-color: #00B074; background: #E8FBF3; color: #005c3a; font-weight: 700; }
+        .quiz-option.wrong { border-color: #FF4D4D; background: #FFF0F0; color: #aa0000; }
+        .quiz-option.disabled { cursor: default; pointer-events: none; }
+        .quiz-feedback { display: none; margin-top: 12px; padding: 14px 16px; border-radius: 12px; font-size: 15px; line-height: 1.7; font-family: "Pretendard Variable", Pretendard, sans-serif; }
+        .quiz-feedback.correct-fb { background: #E8FBF3; border-left: 4px solid #00B074; color: #004d35; }
+        .quiz-feedback.wrong-fb { background: #FFF0F0; border-left: 4px solid #FF4D4D; color: #7a0000; }
+        .quiz-feedback.show { display: block; }
+        .checklist-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; cursor: pointer; }
+        .checklist-box { width: 24px; height: 24px; min-width: 24px; border: 2px solid #2D1B69; border-radius: 6px; display: flex; align-items: center; justify-content: center; transition: background .2s; margin-top: 1px; background: #fff; }
+        .checklist-box.checked { background: #2D1B69; border-color: #2D1B69; }
+        .check-mark { display: none; color: #fff; font-size: 14px; font-weight: 800; }
+        .checklist-box.checked .check-mark { display: block; }
+        .checklist-text { font-size: 15px; color: #333; line-height: 1.7; transition: color .2s; }
+        .checklist-text.done { color: #aaa; text-decoration: line-through; }
+        
+        .chat-container { padding: 20px; background: #f0f2f5; display: flex; flex-direction: column; gap: 15px; border-radius: 12px; }
+        .message { max-width: 85%; padding: 12px 16px; border-radius: 15px; font-size: 14px; line-height: 1.5; position: relative; }
+        .message.left { align-self: flex-start; background: white; border: 1px solid #ddd; border-bottom-left-radius: 2px; }
+        .message.right { align-self: flex-end; background: #2D1B69; color: white; border-bottom-right-radius: 2px; }
+        .message .name { display: block; font-size: 11px; font-weight: bold; margin-bottom: 4px; color: #666; }
+        .message.right .name { color: #D1C4E9; text-align: right; }
+
+        @media (max-width: 480px) {
+            .compare-table td { display: block !important; width: 100% !important; padding: 0 0 12px 0 !important; }
+        }
+    </style>
+</head>
+<body>
+<div style="width:100%; background:#f2f4f7;">
+    <table cellpadding="0" cellspacing="0" style="width:100%; max-width:640px; margin:0 auto; padding:40px 0 60px; table-layout:fixed; letter-spacing:-0.3px;">
+        <tr><td style="padding:0 20px 24px;">
+            <div style="background:linear-gradient(135deg,#2D1B69,#7C4DFF); border-radius:20px; padding:32px 28px; text-align:center;">
+                <div style="font-size:12px; font-weight:700; color:#D1C4E9; letter-spacing:2.5px; margin-bottom:10px;">농림축산식품부 5급 역량 리마인드 시리즈</div>
+                <div style="font-size:26px; font-weight:900; color:#fff; line-height:1.35; margin-bottom:8px;">갈등을 넘어 상생의 길로<br>합리적 대안을 찾는 협의조정</div>
+                <div style="font-size:14px; color:#D1C4E9;">평가 이후에도 역량은 계속됩니다 · ⓒ ASSESTA</div>
+            </div>
+        </td></tr>
+
+        <tr><td style="padding:0 20px 8px; text-align:center;">
+            <span style="display:inline-block; background:#fff; border:2px solid #2D1B69; border-radius:100px; padding:6px 20px; font-size:13px; font-weight:700; color:#2D1B69;">4편 · 협의조정 / 총 6편 시리즈</span>
+            <div style="margin-top:8px; font-size:13px; color:#888;">농림축산식품부 5급 역량평가 수료자 대상</div>
+        </td></tr>
+
+        <tr><td style="padding:20px 20px 0;">
+            <div style="height:4px; background:linear-gradient(90deg,#2D1B69,#7C4DFF,#D1C4E9); border-radius:4px;"></div>
+        </td></tr>
+
+        <tr><td style="background:#fff; padding:0 20px 40px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;">
+                <tr><td style="padding:40px 0 6px; text-align:center; font-size:24px; font-weight:900; color:#2D1B69; line-height:1.35;">
+                    이해관계자의 충돌을 조율하는 안목, <br>수용 가능한 합의를 이끄는 전략
+                </td></tr>
+                <tr><td style="padding-bottom:6px; text-align:center; font-size:14px; font-weight:700; color:#7C4DFF;">
+                    #협의조정 &nbsp;#이해관계자요구사항파악 &nbsp;#설득및조정 &nbsp;#윈윈전략
+                </td></tr>
+
+                <tr><td style="padding:22px 0 32px; font-size:16px; color:#333; line-height:1.9;">
+                    "서로 다른 목소리가 팽팽하게 맞설 때, 어디서부터 손을 대야 할지 막막했던 적이 있으신가요?" 정책 수립과 집행 과정에서 이해관계자 간의 갈등은 피할 수 없는 행정의 실무적 환경입니다.<br><br>
+                    5급 사무관의 협의조정은 단순한 타협이 아닙니다. 농정 현장의 복잡한 이해관계를 입체적으로 분석하여, 표면적인 요구 뒤에 숨겨진 쟁점을 규명하고 '정책 목표와 현장 수용성의 접점'을 설계하는 고도의 중재 과정입니다.<br><br>
+                    리마인드 시리즈의 네 번째 시간, 갈등을 정책 고도화의 동력으로 바꾸는 <strong style="color:#2D1B69;">협의조정</strong> 역량을 함께 점검해 보겠습니다.
+                </td></tr>
+
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:linear-gradient(135deg,#F3F1F9,#EDE7F6); border:1.5px solid #D1C4E9; border-radius:16px; padding:24px 22px;">
+                        <div style="font-size:17px; font-weight:800; color:#2D1B69; margin-bottom:14px;">📌 오늘의 리마인드 포인트</div>
+                        <ul style="margin:0; padding-left:18px;">
+                            <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">협의조정 역량의 정의와 5급 사무관에게 요구되는 역할을 이해합니다.</li>
+                            <li style="font-size:15px; color:#333; line-height:1.8; margin-bottom:6px;">'이해관계자요구사항파악'과 '설득 및 조정'의 핵심 행동을 현업 예시를 통해 확인합니다.</li>
+                            <li style="font-size:15px; color:#333; line-height:1.8;">농정 현장의 갈등 시나리오를 통해 상호 수용 가능한 합리적 조정안 도출법을 익힙니다.</li>
+                        </ul>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:16px;">
+                    <span style="display:inline-block; background:#2D1B69; color:#D1C4E9; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ①</span>
+                    <div style="font-size:21px; font-weight:900; color:#2D1B69; line-height:1.4;">협의조정 역량이란 무엇인가?</div>
+                </td></tr>
+                <tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+                    협의조정은 단순히 양측의 의견을 절반씩 섞는 기계적 중립이 아닙니다. 이에 대한 공식 정의는 다음과 같습니다.
+                </td></tr>
+
+                <tr><td style="padding-bottom:22px;">
+                    <div style="background:#2D1B69; border-radius:16px; padding:24px 26px;">
+                        <div style="font-size:11px; font-weight:700; color:#D1C4E9; margin-bottom:10px; letter-spacing:2px;">DEFINITION · 협의조정</div>
+                        <div style="font-size:16px; color:#fff; line-height:1.9;">
+                            "이해관계자들의 입장과 요구사항을 파악하고 <strong style="color:#D1C4E9;">합리적으로 상호 수용 가능한 조정안을 제시하는 역량</strong>"
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+                    핵심 키워드는 <strong>'쟁점 규명'</strong>과 <strong>'전략적 중재'</strong>입니다. 협의조정은 <strong>이해관계자의 입장 뒤에 숨겨진 실질적인 요구와 필요를 분석하고 → 이를 정책적 수용 가능성과 연결하여 → 최적의 조정안으로 설득하는 과정</strong>입니다.
+                </td></tr>
+
+                <tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#2D1B69;">2가지 하위요소와 행동지표</td></tr>
+                <tr><td style="padding-bottom:10px;">
+                    <div style="background:#F3F1F9; border:1.5px solid #D1C4E9; border-radius:14px; padding:20px 18px; margin-bottom:10px;">
+                        <div style="font-size:11px; font-weight:700; color:#2D1B69; margin-bottom:6px; letter-spacing:1px;">하위요소 ①</div>
+                        <div style="font-size:16px; font-weight:900; color:#2D1B69; margin-bottom:8px;">이해관계자요구사항파악</div>
+                        <div style="font-size:14px; color:#555; line-height:1.75;">이해관계자들의 입장과 요구사항 및 갈등상황을 파악하여 쟁점을 규명함</div>
+                        <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #D1C4E9; font-size:13px; color:#7C4DFF; font-weight:600;">
+                            💡 현업 예시: 스마트팜 혁신밸리 조성 시, 토지 보상가 증액을 요구하는 지주와 환경 오염을 우려하는 주민의 갈등 이면에 '지역 소멸에 따른 자산가치 하락'이라는 공통 쟁점이 있음을 포착하는 태도
+                        </div>
+                    </div>
+                    <div style="background:#F4E7EE; border:1.5px solid #D9B8C7; border-radius:14px; padding:20px 18px;">
+                        <div style="font-size:11px; font-weight:700; color:#A00040; margin-bottom:6px; letter-spacing:1px;">하위요소 ②</div>
+                        <div style="font-size:16px; font-weight:900; color:#884A61; margin-bottom:8px;">설득 및 조정</div>
+                        <div style="font-size:14px; color:#555; line-height:1.75;">이해관계자들을 효과적으로 설득하고 조정안을 마련함</div>
+                        <div style="margin-top:10px; padding-top:10px; border-top:1px dashed #D9B8C7; font-size:13px; color:#941B44; font-weight:600;">
+                            💡 현업 예시: 온라인 도매시장 도입 시, 기존 오프라인 주체들의 반발에 대해 '디지털 전환 지원금'과 '신규 물류 거점 운영권' 등 실질적 실익을 담은 상생안을 제시해 합의를 이끄는 행동
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:#FEF9E7; border:1.5px solid #F4D03F; border-radius:14px; padding:16px 18px;">
+                        <div style="font-size:13px; font-weight:800; color:#d97706; margin-bottom:10px;">📊 평가기법 매트릭스에서 협의조정 위치</div>
+                        <table cellpadding="0" cellspacing="0" style="width:100%; text-align:center;">
+                            <tr>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; text-align:left; width:40%;">평가기법</td>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">서류함</td>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">발표</td>
+                                <td style="font-size:13px; font-weight:700; color:#888; padding-bottom:8px; width:20%;">역할수행</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:14px; font-weight:700; color:#E5A500; text-align:left;">협의조정</td>
+                                <td style="font-size:18px; color:#ddd;">—</td>
+                                <td style="font-size:18px; color:#E5A500;">●</td>
+                                <td style="font-size:18px; color:#E5A500;">●</td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:8px; font-size:13px; color:#777; line-height:1.7;">협의조정은 주로 <strong>발표 및 역할수행 기법</strong>을 통해 이해관계자의 입장과 쟁점을 명확히 규명하고, 효과적인 설득을 통해 상호 수용 가능한 합리적 조정안을 도출하는 능력을 검증합니다.</div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:16px;">
+                    <span style="display:inline-block; background:#7C4DFF; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">읽을거리 ②</span>
+                    <div style="font-size:21px; font-weight:900; color:#2D1B69; line-height:1.4;">현업에서 협의조정은<br>어떻게 나타날까?</div>
+                </td></tr>
+                <tr><td style="padding-bottom:18px; font-size:16px; color:#444; line-height:1.9;">
+                    아래 상황을 읽어보세요. 여러분의 현업 장면과 얼마나 겹치나요? 실제 농정 현장에서 발생할 수 있는 시나리오를 통해 협의조정 행동을 다시 느껴보세요.
+                </td></tr>
+
+                <tr><td style="padding-bottom:22px;">
+                    <div style="border:2px solid #e0e0e0; border-radius:16px; overflow:hidden;">
+                        <div style="background:#f5f5f5; padding:11px 20px; font-size:12px; font-weight:700; color:#666; letter-spacing:1.5px;">📋 상황 시나리오</div>
+                        <div style="padding:20px; font-size:15px; color:#333; line-height:1.9;">
+                            <strong style="color:#2D1B69;">D 사무관</strong>은 '농번기 외국인 계절근로자 숙소 지원 사업'을 추진 중이다. 그러나 지자체는 재정 부담을 이유로 사업 추진 자체에 난색을 표하고, 농가 단체는 시설 기준이 과도하다며 참여가 어렵다는 입장이다. 이에 <strong style="color:#2D1B69;">D 사무관</strong>은 관계기관 간담회를 통해 이해관계 조정에 나섰다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:30px;">
+                    <div class="chat-container">
+                        <div class="message left">
+                            <span class="name">지자체 담당자</span>
+                            중앙부처에서 지침만 내려보내면 끝입니까? 지방 소멸 위기에 재정 자립도도 낮은데, 지방비 매칭 50%는 과합니다. 국비가 70% 이상 안 되면 사업 추진 자체가 어렵습니다.
+                        </div>
+                        <div class="message left">
+                            <span class="name">농가 단체 대표</span>
+                            사무관님, 1년 중 몇 달만 쓰는 숙소인데 시설 기준이 원룸 수준인 건 현실성이 없습니다. 이 기준이면 농가들은 참여하기 어렵습니다.
+                        </div>
+                        <div class="message right">
+                            <span class="name">D 사무관 (이해관계 파악)</span>
+                            지자체는 근로자가 없는 기간 동안 시설이 유휴화되면서 발생하는 관리 부담과 재정 낭비를, 농가는 단기간 사용을 위한 초기 투자 비용의 부담을 우려하고 계시는군요. 즉, 핵심 쟁점은 ‘시설 운영의 지속 가능성’과 ‘투자 비용의 경제성’으로 보입니다.
+                        </div>
+                        <div class="message left">
+                            <span class="name">지자체 담당자</span>
+                            맞습니다. 예산도 문제지만, 비수기에 빈 건물을 계속 관리해야 하는 것도 큰 부담입니다.
+                        </div>
+                        <div class="message right">
+                            <span class="name">D 사무관 (쟁점 구조화 및 해결 방향 제시)</span>
+                            그렇다면 시설이 ‘비수기에도 활용될 수 있는 구조’를 만든다면 지자체 부담을 줄일 수 있을 것 같습니다. 예를 들어, 숙소를 ‘농촌 체험 휴양마을’과 연계하여 비수기에는 관광객 숙박시설로 활용할 수 있도록 지침 개정을 검토해 보겠습니다. 이렇게 되면 단순한 비용이 아니라, 일정 수준의 수익 창출도 기대할 수 있습니다.
+                        </div>
+                        <div class="message left">
+                            <span class="name">농가 단체 대표</span>
+                            그 부분은 이해가 되는데, 시설 기준이 여전히 높으면 초기 투자 부담은 그대로입니다.
+                        </div>
+                        <div class="message right">
+                            <span class="name">D 사무관 (상생 조정안 도출)</span>
+                            그 점을 고려하여, 인권 및 안전 기준은 유지하되 건축비 부담을 낮출 수 있는 ‘조립식 모듈러 주택’ 설치를 허용하는 방안을 함께 검토하겠습니다. 또한 지자체의 재정 부담을 고려해 매칭 비율은 유지하되, 해당 사업에 참여하는 경우 정부 공모 사업 신청 시 가점을 부여하는 인센티브 방안을 기획재정부와 협의해 보겠습니다. 이 경우 지자체는 재정 부담 완화와 활용도 제고 효과를, 농가는 초기 투자 부담 완화 효과를 기대할 수 있을 것으로 보입니다. 양측 모두 검토 가능하실까요?
+                        </div>
+                    </div>
+                    <div style="margin-top:12px; padding:15px; background:#F3F1F9; border-radius:12px; font-size:14px; color:#2D1B69; line-height:1.6;">
+                        <strong>🔑 역량 발휘 포인트:</strong> 각 주체의 불만 이면에 있는 '매몰 비용에 대한 우려'와 '시설 활용도 저하'라는 핵심 쟁점을 명확히 짚어냈습니다. 이후 단순한 양보가 아닌 '수익형 모델 연계'와 '규제 완화형 건축 방식'이라는 창의적 대안을 제시하여 상호 수용 가능한 접점을 마련했습니다.
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:8px; font-size:15px; font-weight:800; color:#2D1B69;">역량 수준에 따른 행동 차이</td></tr>
+                <tr><td style="padding-bottom:28px;">
+                    <table cellpadding="0" cellspacing="0" class="compare-table" style="width:100%;">
+                        <tr>
+                            <td style="width:50%; vertical-align:top; padding-right:8px;">
+                                <div style="background:#E8FBF3; border:1.5px solid #35BD76; border-radius:14px; padding:18px 16px;">
+                                    <div style="font-size:13px; font-weight:800; color:#004D35; margin-bottom:10px;">✅ 역량 발휘 행동</div>
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">갈등 주체들의 표면적 요구가 아닌 실질적 이해관계와 숨은 쟁점을 규명함</li>
+                                        <li style="font-size:14px; color:#333; line-height:1.8; margin-bottom:6px;">양측의 수용 가능한 한계선을 파악하여 전략적 협상 카드로 활용함</li>
+                                        <li style="font-size:14px; color:#333; line-height:1.8;">논리적 근거와 정책적 기대효과를 제시해 조정안에 대한 심리적 거부감을 해소함</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:50%; vertical-align:top; padding-left:8px;">
+                                <div style="background:#FFF5F5; border:1.5px solid #ffaaaa; border-radius:14px; padding:18px 16px;">
+                                    <div style="font-size:13px; font-weight:800; color:#cc3333; margin-bottom:10px;">⚠️ 역량 미흡 행동</div>
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">중립성을 잃고 특정 집단의 논리에 치우치거나 민원 회피 위주로 대응함</li>
+                                        <li style="font-size:14px; color:#555; line-height:1.8; margin-bottom:6px;">쟁점 분석 없이 예산 증액이나 규제 철폐 등 단편적이고 비현실적인 대안만 제시함</li>
+                                        <li style="font-size:14px; color:#555; line-height:1.8;">반대 의견에 대해 정책 취지나 논리적 설득 대신 법령과 지침만을 강조하며 압박함</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;">
+                    <div style="background:#FFFBF0; border-left:4px solid #F5A623; border-radius:0 14px 14px 0; padding:18px 20px;">
+                        <div style="font-size:13px; font-weight:800; color:#995500; margin-bottom:8px;">💡 현업 적용 인사이트</div>
+                        <div style="font-size:15px; color:#333; line-height:1.85;">
+                            협의조정의 성패는 '정책적 실익의 범위를 어떻게 확장할 것인가'에 달려 있습니다. 한쪽의 이득이 다른 쪽의 손실이 되는 상충 관계를 넘어, 부처 간 협업이나 예산 구조의 유연한 설계를 통해 이해관계자 모두에게 새로운 편익을 제공하는 창의적 조정안이 필요합니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:24px; text-align:center;">
+                    <span style="display:inline-block; background:linear-gradient(135deg,#2D1B69,#7C4DFF); color:#fff; font-size:12px; font-weight:700; padding:5px 16px; border-radius:100px; margin-bottom:14px; letter-spacing:1.5px;">🧩 오늘의 퀴즈</span>
+                    <div style="font-size:21px; font-weight:900; color:#2D1B69; line-height:1.4; margin-bottom:8px;">협의조정 역량,<br>얼마나 이해하셨나요?</div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:24px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div style="font-size:12px; font-weight:700; color:#2D1B69; margin-bottom:10px;">Q 1 / 3 &nbsp;·&nbsp; 개념 이해</div>
+                        <div style="font-size:16px; font-weight:800; color:#2D1B69; line-height:1.6; margin-bottom:18px;">
+                            다음 중 협의조정 역량의 하위요소인 '이해관계자요구사항파악'의 정의로 가장 올바른 것은? 
+                        </div>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">① 발생한 문제를 해결할 수 있는 최적의 해결방안을 모색함</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">② 정책 효과성과 파급효과에 따른 우선순위를 고려하여 정책 방향을 수립함</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',true)">③ 이해관계자들의 입장과 요구사항 및 갈등상황을 파악하여 쟁점을 규명함</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q1',false)">④ 조직 구성원의 말을 적극적으로 경청하고 상황, 의도, 감정 등을 이해하는 등 편한 대화분위기를 조성함</button>
+                        <div id="q1-correct" class="quiz-feedback correct-fb">
+                            ✅ <strong>정답입니다!</strong> 협의조정 역량의 하위요소는 '이해관계자요구사항파악'과 '설득 및 조정'입니다.  보기 ③은 '이해관계자요구사항파악'의 정확한 정의입니다. ①은 문제대응력의 하위요소 '대안제시', ②는 기획력의 하위요소 '전략방향 수립', ④는 의사소통의 하위요소 '적극적 경청' 역량에 해당합니다.
+                        </div>
+                        <div id="q1-wrong" class="quiz-feedback wrong-fb">
+                            ❌ <strong>아쉽습니다!</strong> 정답은 ③입니다. 협의조정 역량의 하위요소는 이해관계자들의 입장과 요구사항 및 갈등상황을 파악하여 쟁점을 규명하는 '이해관계자요구사항파악'과 이해관계자들을 효과적으로 설득하고 조정안을 마련하는 '설득 및 조정'입니다.①은 문제대응력의 하위요소 '대안제시', ②는 기획력의 하위요소 '전략방향 수립', ④는 의사소통의 하위요소 '적극적 경청' 역량에 해당합니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:24px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div style="font-size:12px; font-weight:700; color:#2D1B69; margin-bottom:10px;">Q 2 / 3 &nbsp;·&nbsp; 현업 적용</div>
+                        <div style="font-size:16px; font-weight:800; color:#2D1B69; line-height:1.6; margin-bottom:8px;">
+                            다음 중 협의조정 역량이 가장 우수한 사무관의 행동은?
+                        </div>
+                        <div style="font-size:14px; color:#555; line-height:1.75; margin-bottom:18px; padding:12px 16px; background:#fff; border-radius:10px; border:1px solid #e0e0e0;">
+                            <strong>상황:</strong> 쌀 수급 안정을 위해 전략작물직불제 참여를 독려하고 있으나, 쌀 전업농들은 가격 하락에 대한 불안감으로 타 작물 전환에 강력히 반대하고 있으며, 예산 당국은 재정 부담을 이유로 직불금 단가 추가 인상에 난색을 표하고 있다.
+                        </div>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">① 농가에 전환 거부 시 향후 각종 보조금 지원 대상에서 제외될 수 있음을 고지하며 압박한다.</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">② 예산 당국과의 사전 협의 없이, 농가의 요구를 수용하여 직불금 단가를 즉시 두 배 인상하겠다고 약속한다..</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',true)">③ 농가의 소득 불안 요인을 분석하여 '전환 작물의 안정적 판로 확보'와 '수입보장보험 연계'를 골자로 하는 상호 수용 가능한 통합 조정안을 제시한다</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q2',false)">④ 양측의 입장 차이가 완강하여 합의가 어렵다고 판단하고, 추가 논의 없이 사업 규모를 대폭 축소하여 보고한다.</button>
+                        <div id="q2-correct" class="quiz-feedback correct-fb">
+                            ✅ <strong>정답입니다!</strong> 협의조정은 어느 한쪽의 일방적 희생을 강요하는 것이 아닙니다. 농가(소득 보전)와 예산 당국(재정 효율성)이라는 두 이해관계자의 핵심 쟁점을 정확히 파악하고, 비예산적 지원(판로, 보험)을 결합하여 합리적인 조정안을 도출한 ③번이 가장 우수한 행동입니다.
+                        </div>
+                        <div id="q2-wrong" class="quiz-feedback wrong-fb">
+                            ❌ <strong>아쉽습니다!</strong> 정답은 ③입니다. ①은 강압적 설득, ②는 실현 불가능한 대안, ④는 조정 노력이 결여된 회피형 행동입니다. 협의조정 역량은 이해관계자 간의 핵심 쟁점을 규명하여 상호 수용 가능한 합리적 조정안을 도출하는 것이 핵심입니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div style="font-size:12px; font-weight:700; color:#2D1B69; margin-bottom:10px;">Q 3 / 3 &nbsp;·&nbsp; O / X 판단</div>
+                        <div style="font-size:16px; font-weight:800; color:#2D1B69; line-height:1.6; margin-bottom:18px;">
+                            협의조정 역량의 하위요소인 '설득 및 조정'은 이해관계자들을 효과적으로 설득하고 상호 수용 가능한 조정안을 마련하는 것을 목표로 한다. &nbsp;<span style="color:#7C4DFF;">[O / X]</span>
+                        </div>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q3',true)" style="text-align:center; font-size:18px; font-weight:900;">⭕ &nbsp;O</button>
+                        <button class="quiz-option" onclick="checkQuiz(this,'q3',false)" style="text-align:center; font-size:18px; font-weight:900;">❌ &nbsp;X</button>
+                        <div id="q3-correct" class="quiz-feedback correct-fb">
+                            ✅ <strong>정답입니다!</strong> '설득 및 조정'은 이해관계자들을 효과적으로 설득하고 조정안을 마련하는 것을 의미합니다. 
+                        </div>
+                        <div id="q3-wrong" class="quiz-feedback wrong-fb">
+                            ❌ <strong>아쉽습니다!</strong> 정답은 O입니다. '설득 및 조정'은 이해관계자들을 효과적으로 설득하고 조정안을 마련하는 것입니다. 협의조정은 이해관계자들의 쟁점 상황을 규명하고, 이해관계자들을 효과적으로 설득하기 위한 상호 수용가능한 조정안을 마련하는 역량입니다.
+                        </div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:36px;"><div style="height:1px; background:linear-gradient(90deg,transparent,#ddd,transparent);"></div></td></tr>
+
+                <tr><td style="padding-bottom:16px;">
+                    <span style="display:inline-block; background:#d97706; color:#fff; font-size:11px; font-weight:700; padding:4px 13px; border-radius:100px; margin-bottom:12px; letter-spacing:1.5px;">셀프 체크</span>
+                    <div style="font-size:21px; font-weight:900; color:#2D1B69; line-height:1.4;">나의 협의조정<br>현업 실천 체크리스트</div>
+                </td></tr>
+                <tr><td style="padding-bottom:6px; font-size:14px; color:#888;">최근의 부처 협의나 민원인 갈등 중재 상황을 떠올리며 체크해 보세요.</td></tr>
+                <tr><td style="padding-bottom:32px;">
+                    <div style="background:#f8f9fa; border:1.5px solid #e8e8e8; border-radius:16px; padding:22px 20px;">
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">상충하는 요구사항 사이에서 공통의 목표나 상호 보완 가능한 지점을 찾아냈다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">단순한 감정적 대립이 아닌 예산 구조, 법적 권한 등 실질적인 갈등의 쟁점을 명확히 정리했다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">조정안을 제시할 때 기대되는 정책 효과와 실익을 객관적인 데이터나 사례로 설명했다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">상대방이 공격받는다고 느끼지 않도록 '상생', '협력', '보완' 등 긍정적인 언어를 사용해 대화를 주도했다.</div>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheck(this)">
+                            <div class="checklist-box"><span class="check-mark">✓</span></div>
+                            <div class="checklist-text">당장의 합의에 급급하기보다 사후 이행 점검이나 추가 지원책을 포함한 지속 가능한 합의안을 도출했다.</div>
+                        </div>
+                        <div id="checklist-result" style="display:none; margin-top:18px; padding:14px 16px; border-radius:12px; font-size:14px; line-height:1.8;"></div>
+                    </div>
+                </td></tr>
+
+                <tr><td style="padding-bottom:30px;">
+                    <div style="height:4px; background:linear-gradient(90deg,#D1C4E9,#7C4DFF,#2D1B69); border-radius:4px;"></div>
+                </td></tr>
+
+<tr><td style="padding-bottom:0;">
+  <div style="background:linear-gradient(135deg,#1A1040,#2D1B69); border-radius:20px; padding:34px 28px; text-align:center;">
+    <div style="font-size:12px; font-weight:700; color:#D1C4E9; letter-spacing:2.5px; margin-bottom:16px;">오늘의 성장 한 줄</div>
+    <div style="font-size:18px; font-weight:600; color:#fff; line-height:1.8; margin-bottom:14px;">
+      "비즈니스나 인생에서 당신이 마땅히 받아야 할 것을 얻는 것이 아니라,<br>당신이 협상한 것을 얻는 것이다."
+    </div>
+    <div style="font-size:14px; color:#D1C4E9;">— 체스터 카라스 (Chester L. Karrass)</div>
+  </div>
+</td></tr>
+
+<tr><td style="padding:32px 20px;"><div style="height:1px; background:#ddd;"></div></td></tr>
+
+<tr><td style="padding:0 20px 24px;">
+<div style="background:#fff; border:1.5px solid #e0e0e0; border-radius:16px; padding:22px 24px; text-align:center;">
+<div style="font-size:12px; font-weight:700; color:#aaa; margin-bottom:8px; letter-spacing:2px;">NEXT EPISODE</div>
+<div style="font-size:18px; font-weight:900; color:#2D1B69; margin-bottom:5px;">5편 · 팀워크 촉진</div>
+<div style="font-size:14px; color:#777;">갈등을 넘어 협력으로 이끄는 화합의 에너지, 팀워크 촉진</div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 32px;">
+<div style="background:#fff; border:1.5px solid #e8e8e8; border-radius:16px; padding:28px 24px; text-align:center;">
+<div style="font-size:18px; font-weight:800; color:#222; margin-bottom:6px;">오늘의 리마인드는 어떠셨나요?</div>
+<div style="font-size:14px; color:#888; margin-bottom:20px;">여러분의 피드백이 콘텐츠를 더 좋게 만듭니다 🚩</div>
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+<tr>
+<td style="padding-right:8px;"><span onclick="giveFeedback('good')" style="display:block; height:52px; line-height:52px; background:#F3F1F9; border:2px solid #2D1B69; border-radius:12px; font-size:15px; font-weight:700; color:#2D1B69; cursor:pointer; text-align:center;">도움이 됐어요 😊</span></td>
+<td style="width:12px;"></td>
+<td style="padding-left:8px;"><span onclick="giveFeedback('bad')" style="display:block; height:52px; line-height:52px; background:#fafafa; border:2px solid #ccc; border-radius:12px; font-size:15px; font-weight:700; color:#888; cursor:pointer; text-align:center;">아쉬웠어요 🤔</span></td>
+</tr>
+</table>
+<div id="feedback-msg" style="display:none; margin-top:14px; font-size:14px; font-weight:600;"></div>
+</div>
+</td></tr>
+
+<tr><td style="padding:0 20px 50px; text-align:center;">
+<div style="border-top:1px solid #e8e8e8; padding-top:24px;">
+<div style="font-size:20px; font-weight:900; color:#2D1B69; margin-bottom:6px;">ASSESTA</div>
+<div style="font-size:13px; color:#aaa; line-height:1.6;">본 메일은 농림축산식품부 5급 역량 교육의 일환으로 발송되었습니다.<br>
+무단 전재 및 재배포를 금합니다. Copyright 2026. ASSESTA.</div>
+</div>
+</td></tr>
+
+</table>
+</div>
+
+<script>
+function checkQuiz(btn, qId, isCorrect) {
+var parent = btn.parentElement;
+var options = parent.querySelectorAll('.quiz-option');
+options.forEach(function(opt) { opt.classList.add('disabled'); });
+
+if (isCorrect) {
+btn.classList.add('correct');
+document.getElementById(qId + '-correct').classList.add('show');
+} else {
+btn.classList.add('wrong');
+document.getElementById(qId + '-wrong').classList.add('show');
+}
+}
+
+var checkCount = 0;
+function toggleCheck(item) {
+var box = item.querySelector('.checklist-box');
+var text = item.querySelector('.checklist-text');
+var result = document.getElementById('checklist-result');
+var total = document.querySelectorAll('.checklist-item').length;
+
+if (box.classList.contains('checked')) {
+box.classList.remove('checked');
+text.classList.remove('done');
+checkCount = Math.max(0, checkCount - 1);
+} else {
+box.classList.add('checked');
+text.classList.add('done');
+checkCount++;
+}
+
+if (checkCount === 0) { result.style.display = 'none'; return; }
+result.style.display = 'block';
+if (checkCount === total) {
+result.style.background='#E8FBF3'; result.style.color='#004d35';
+result.innerHTML='🌟 <strong>5개 모두 체크!</strong> 협의조정 역량을 현업에서 충실히 실천하고 계시네요. 갈등을 상생의 기회로 만드는 최고의 정책 중재자이십니다.';
+} else if (checkCount >= 3) {
+result.style.background='#F3F1F9'; result.style.color='#2D1B69';
+result.innerHTML='👍 <strong>' + checkCount + '개 체크!</strong> 잘 실천하고 계십니다. 체크하지 못한 항목을 다음 이해관계자 협의나 갈등 중재 시 의식적으로 적용해 보세요.';
+} else {
+result.style.background='#FFFBF0'; result.style.color='#7a4f00';
+result.innerHTML='📝 <strong>' + checkCount + '개 체크.</strong> 체크하지 못한 항목이 주요 개발 포인트입니다. 체크하지 못한 항목이 주요 개발 포인트입니다. 갈등 상황에서 감정적 대립보다는 예산이나 법적 권한 등 실질적인 쟁점을 목록화하는 것부터 시작해 보세요!';
+}
+}
+
+function giveFeedback(type) {
+var msg = document.getElementById('feedback-msg');
+msg.style.display = 'block';
+if (type === 'good') {
+msg.style.color = '#2D1B69';
+msg.innerHTML = '감사합니다! 긍정적인 피드백이 큰 힘이 됩니다. 더 유익한 시리즈로 보답하겠습니다.';
+} else {
+msg.style.color = '#888';
+msg.innerHTML = '소중한 의견 감사합니다. 더 나은 콘텐츠를 위해 적극적으로 보완하겠습니다.';
+}
+}
+</script>
+
+</body>
+</html>
